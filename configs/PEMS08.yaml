@@ -1,0 +1,55 @@
+## [dataset]
+dataset: PEMS08                   # The name of dataset.
+root_path: ./data/PEMS08          # The root path of dataset.
+sensor_size: 170                  # The number of sensors in the dataset.
+time_interval: 5                  # The time interval of one time step in the dataset.
+closeness_length: 24              # The time step of current pattern input.(1 step denotes 5 min time intervals.)
+trend_length: 24                  # The time step of daily pattern input.(= prediction_length)
+period_length: 24                 # The length of weekly pattern input.(= prediction_length)
+prediction_length: 24             # The length of prediction output.
+train_ratio: 0.6                  # The ratio of training set.
+val_ratio: 0.2                    # The ratio of validation set.
+is_multi_view: True               # Whether to process daily and weekly period pattern corresponding to prediction sequence
+
+
+## [model]
+cheb_k: 3                                                         # the stacking number of AGCN
+stack_num: 2                                                      # the stacking number of ADAGCN and TJMTE
+tjmte_heads: 3
+tjmte_head_dim: 32
+tjmte_dim: 64
+dropout: 0.2
+agcn_out_dim: 32
+dynamic_time_embed_dim: 16
+dynamic_node_embed_dim: 8
+static_node_embed_dim: 32
+gfe_dim: 64                                                       # the dimension of graph feature embedding
+dmaf_heads: 3
+dmaf_head_dim: 32
+closeness_use_dynamic: True
+trend_use_dynamic: False
+period_use_dynamic: False
+
+
+## [train]
+decay_step: 5                                                     # The learning rate decay every 'decay_step' step
+decay_rate: 0.8                                                   # The decay rate of learning rate.
+epochs: 100                                                       #
+learning_rate: 0.001                                              # Initial learning rate.
+batch_size: 16                                                    #
+shuffle: True                                                     # Whether to shuffle the dataset records or not.
+is_early_stop: True                                               # Whether to apply early stop strategy or not.
+early_stop_patience: 10                                           # How many epochs to wait.
+
+
+## [setting]
+mode: train                                                       # Train or test
+best_path: ./experiments/PEMS08/2023-10-06-15-18-30/best_model    # If test, present best model path.
+save_model: True                                                  # Whether to save the best model or not.
+save_path: ./experiments/PEMS08                                   # The best model parameters and logs save root path.
+device: 0                                                         # The index of GPUs.
+debug: True                                                       # Whether the screen show DEBUG information.
+cuda: True                                                        # Whether to use the GPU device or not.
+is_limit: False                                                   # Whether to limit the max gpu memory or not.
+max_memory_usage: 6500                                            # The max gpu memory to allocate.
+is_dynamic_allocation: False                                      # Whether to enable dynamic memory allocation.
