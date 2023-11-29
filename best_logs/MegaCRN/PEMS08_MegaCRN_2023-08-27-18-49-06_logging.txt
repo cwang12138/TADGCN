@@ -1,0 +1,110 @@
+model MegaCRN
+dataset PEMS08
+trainval_ratio 0.8
+val_ratio 0.25
+num_nodes 170
+seq_len 24
+horizon 24
+input_dim 1
+output_dim 1
+num_rnn_layers 1
+rnn_units 64
+max_diffusion_step 3
+mem_num 20
+mem_dim 64
+loss mask_mae_loss
+separate loss lamb 0.01
+compact loss lamb1 0.01
+batch_size 16
+epochs 200
+patience 20
+lr 0.01
+epsilon 0.001
+steps [50, 100]
+lr_decay_ratio 0.1
+use_curriculum_learning True
+PEMS08 training and testing started Sun Aug 27 18:49:08 2023
+train xs.shape, ys.shape (10685, 24, 170, 2) (10685, 24, 170, 2)
+val xs.shape, ys.shape (3562, 24, 170, 2) (3562, 24, 170, 2)
+test xs.shape, ys.shape (3562, 24, 170, 2) (3562, 24, 170, 2)
+Trainable parameter list: 
+In total: 387281 trainable parameters. 
+Epoch [1/200] (668) train_loss: 16.4188, val_loss: 28.5110, lr: 0.010000, 174.4s 
+Epoch [2/200] (1336) train_loss: 14.4523, val_loss: 26.3180, lr: 0.010000, 171.5s 
+Epoch [3/200] (2004) train_loss: 13.9739, val_loss: 38.1045, lr: 0.010000, 171.9s 
+Epoch [4/200] (2672) train_loss: 13.6454, val_loss: 40.0794, lr: 0.010000, 172.1s 
+Epoch [5/200] (3340) train_loss: 13.4914, val_loss: 26.9851, lr: 0.010000, 172.2s 
+Epoch [6/200] (4008) train_loss: 13.2540, val_loss: 27.7683, lr: 0.010000, 172.3s 
+Epoch [7/200] (4676) train_loss: 13.0792, val_loss: 21.4588, lr: 0.010000, 171.7s 
+Epoch [8/200] (5344) train_loss: 12.9341, val_loss: 28.6396, lr: 0.010000, 172.0s 
+Epoch [9/200] (6012) train_loss: 12.7807, val_loss: 22.7841, lr: 0.010000, 172.4s 
+Epoch [10/200] (6680) train_loss: 12.6533, val_loss: 20.4404, lr: 0.010000, 172.0s 
+Epoch [11/200] (7348) train_loss: 12.5335, val_loss: 19.8936, lr: 0.010000, 172.2s 
+Epoch [12/200] (8016) train_loss: 12.5321, val_loss: 26.2983, lr: 0.010000, 172.2s 
+Epoch [13/200] (8684) train_loss: 12.4212, val_loss: 25.5087, lr: 0.010000, 172.5s 
+Epoch [14/200] (9352) train_loss: 12.3286, val_loss: 21.3224, lr: 0.010000, 172.5s 
+Epoch [15/200] (10020) train_loss: 12.3110, val_loss: 21.2784, lr: 0.010000, 171.9s 
+Epoch [16/200] (10688) train_loss: 12.3634, val_loss: 24.0417, lr: 0.010000, 172.0s 
+Epoch [17/200] (11356) train_loss: 12.3201, val_loss: 23.6562, lr: 0.010000, 172.2s 
+Epoch [18/200] (12024) train_loss: 12.4896, val_loss: 25.4459, lr: 0.010000, 171.5s 
+Epoch [19/200] (12692) train_loss: 12.4762, val_loss: 26.5528, lr: 0.010000, 172.5s 
+Epoch [20/200] (13360) train_loss: 12.5956, val_loss: 19.0625, lr: 0.010000, 172.2s 
+Epoch [21/200] (14028) train_loss: 12.7504, val_loss: 20.5013, lr: 0.010000, 172.6s 
+Epoch [22/200] (14696) train_loss: 13.0542, val_loss: 20.1396, lr: 0.010000, 172.0s 
+Epoch [23/200] (15364) train_loss: 13.2697, val_loss: 19.7316, lr: 0.010000, 172.1s 
+Epoch [24/200] (16032) train_loss: 13.5833, val_loss: 22.2126, lr: 0.010000, 172.4s 
+Epoch [25/200] (16700) train_loss: 14.1821, val_loss: 19.0322, lr: 0.010000, 171.6s 
+Epoch [26/200] (17368) train_loss: 46.3668, val_loss: 45.6054, lr: 0.010000, 171.4s 
+Epoch [27/200] (18036) train_loss: 49.6536, val_loss: 51.6805, lr: 0.010000, 172.1s 
+Epoch [28/200] (18704) train_loss: 47.5578, val_loss: 56.3763, lr: 0.010000, 172.3s 
+Epoch [29/200] (19372) train_loss: 45.9452, val_loss: 36.4334, lr: 0.010000, 172.0s 
+Epoch [30/200] (20040) train_loss: 48.2073, val_loss: 67.1760, lr: 0.010000, 172.4s 
+Epoch [31/200] (20708) train_loss: 45.4200, val_loss: 75.3677, lr: 0.010000, 171.5s 
+Epoch [32/200] (21376) train_loss: 46.6013, val_loss: 53.6659, lr: 0.010000, 171.5s 
+Epoch [33/200] (22044) train_loss: 43.3474, val_loss: 53.8283, lr: 0.010000, 171.5s 
+Epoch [34/200] (22712) train_loss: 42.5953, val_loss: 38.1234, lr: 0.010000, 171.2s 
+Epoch [35/200] (23380) train_loss: 44.3966, val_loss: 45.3816, lr: 0.010000, 171.1s 
+Epoch [36/200] (24048) train_loss: 45.3115, val_loss: 50.8237, lr: 0.010000, 171.4s 
+Epoch [37/200] (24716) train_loss: 45.2601, val_loss: 38.0379, lr: 0.010000, 171.9s 
+Epoch [38/200] (25384) train_loss: 44.2304, val_loss: 49.3076, lr: 0.010000, 172.3s 
+Epoch [39/200] (26052) train_loss: 38.4375, val_loss: 46.7890, lr: 0.010000, 171.5s 
+Epoch [40/200] (26720) train_loss: 38.1072, val_loss: 34.9829, lr: 0.010000, 171.9s 
+Epoch [41/200] (27388) train_loss: 41.7582, val_loss: 36.1647, lr: 0.010000, 171.9s 
+Epoch [42/200] (28056) train_loss: 39.3051, val_loss: 44.1819, lr: 0.010000, 172.1s 
+Epoch [43/200] (28724) train_loss: 38.3691, val_loss: 41.8795, lr: 0.010000, 174.3s 
+Epoch [44/200] (29392) train_loss: 39.3044, val_loss: 40.3040, lr: 0.010000, 172.4s 
+Epoch [45/200] (30060) train_loss: 40.9937, val_loss: 37.5456, lr: 0.010000, 172.4s 
+Early stopping at epoch: 44 
+The total train time is 7743.815155267715s! 
+===================================Best model performance=================================== 
+Horizon overall: mae: 18.5173, mape: 0.1212, rmse: 28.2341 
+Horizon 1 hour 15 mins: mae: 19.6876, mape: 0.1290, rmse: 29.6329 
+Horizon 1 hour 30 mins: mae: 20.6348, mape: 0.1370, rmse: 31.0383 
+Horizon 2 hours: mae: 22.3780, mape: 0.1525, rmse: 33.3985 
+The total test time is 21.628193855285645s! 
+Horizon 1: mae: 12.86, rmse: 19.72, mape: 8.39%.
+Horizon 2: mae: 14.01, rmse: 21.51, mape: 8.89%.
+Horizon 3: mae: 14.82, rmse: 22.67, mape: 9.28%.
+Horizon 4: mae: 15.40, rmse: 23.57, mape: 9.67%.
+Horizon 5: mae: 15.89, rmse: 24.29, mape: 10.02%.
+Horizon 6: mae: 16.37, rmse: 24.99, mape: 10.37%.
+Horizon 7: mae: 16.79, rmse: 25.59, mape: 10.68%.
+Horizon 8: mae: 17.18, rmse: 26.15, mape: 10.95%.
+Horizon 9: mae: 17.58, rmse: 26.67, mape: 11.22%.
+Horizon 10: mae: 17.96, rmse: 27.19, mape: 11.51%.
+Horizon 11: mae: 18.31, rmse: 27.63, mape: 11.79%.
+Horizon 12: mae: 18.62, rmse: 28.08, mape: 12.07%.
+Horizon 13: mae: 18.95, rmse: 28.56, mape: 12.34%.
+Horizon 14: mae: 19.33, rmse: 29.10, mape: 12.64%.
+Horizon 15: mae: 19.71, rmse: 29.66, mape: 12.88%.
+Horizon 16: mae: 20.07, rmse: 30.18, mape: 13.14%.
+Horizon 17: mae: 20.38, rmse: 30.66, mape: 13.41%.
+Horizon 18: mae: 20.66, rmse: 31.07, mape: 13.68%.
+Horizon 19: mae: 20.92, rmse: 31.47, mape: 13.94%.
+Horizon 20: mae: 21.20, rmse: 31.87, mape: 14.18%.
+Horizon 21: mae: 21.52, rmse: 32.29, mape: 14.43%.
+Horizon 22: mae: 21.85, rmse: 32.72, mape: 14.69%.
+Horizon 23: mae: 22.13, rmse: 33.07, mape: 14.95%.
+Horizon 24: mae: 22.40, rmse: 33.43, mape: 15.22%.
+Average Error: mae: 18.54, rmse: 28.01, mape: 12.10%.
+PEMS08 training and testing ended Sun Aug 27 20:58:36 2023

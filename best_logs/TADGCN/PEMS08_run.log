@@ -1,0 +1,117 @@
+2023-11-13 07:13: The best model and running log will save in ./experiments/PEMS08\2023-11-13-07-13-46.
+2023-11-13 07:13: ============================================================================
+2023-11-13 07:13: The setting of dataset(name: PEMS08):
+2023-11-13 07:13: mean: 230.78440856933594; std: 145.92691040039062.
+2023-11-13 07:13: x_train_flow shape: (9488, 170, 72); x_train_time shape: (9488, 72, 5).
+2023-11-13 07:13: y_train shape: (9488, 170, 24); y_train_time shape: (9488, 24, 5)
+2023-11-13 07:13: x_val_flow shape: (3152, 170, 72); x_val_time shape: (3152, 72, 5).
+2023-11-13 07:13: y_val shape: (3152, 170, 24); y_val_time shape: (3152, 24, 5)
+2023-11-13 07:13: x_test_flow shape: (3152, 170, 72); x_test_time shape: (3152, 72, 5).
+2023-11-13 07:13: y_test: (3152, 170, 24); y_test_time shape: (3152, 24, 5)
+2023-11-13 07:13: The number of train records is 9488.
+2023-11-13 07:13: The number of val records is 3152.
+2023-11-13 07:13: The number of test records is 3152.
+2023-11-13 07:13: ============================================================================
+2023-11-13 07:13: ============================================================================
+2023-11-13 07:13: Model settings:
+2023-11-13 07:13: agcn_out_dim=32, batch_size=16, best_path='./experiment/PEMS08/2023-10-06-15-18-30/best_model', cheb_k=3, closeness_length=24, closeness_use_dynamic=True, cuda=True, dataset='PEMS08', debug=True, decay_rate=0.8, decay_step=5, device=0, dmaf_head_dim=32, dmaf_heads=3, dropout=0.2, dynamic_node_embed_dim=8, dynamic_time_embed_dim=16, early_stop_patience=10, epochs=100, gfe_dim=64, is_dynamic_allocation=False, is_early_stop=True, is_limit=False, is_multi_view=True, learning_rate=0.001, max_memory_usage=6500, mode='train', period_length=24, period_use_dynamic=False, prediction_length=24, root_path='./data/PEMS08', save_model=True, save_path='./experiments/PEMS08', sensor_size=170, shuffle=True, stack_num=2, static_node_embed_dim=32, time_interval=5, tjmte_dim=64, tjmte_head_dim=32, tjmte_heads=3, train_ratio=0.6, trend_length=24, trend_use_dynamic=False, val_ratio=0.2
+2023-11-13 07:13: ============================================================================
+2023-11-13 07:13: Start Training!
+2023-11-13 07:18: Epoch 1: Train Loss = 30.23993492126465, Val Loss = 22.7707576751709, Train Time = 299 secs
+2023-11-13 07:23: Epoch 2: Train Loss = 19.136754989624023, Val Loss = 20.430082321166992, Train Time = 267 secs
+2023-11-13 07:27: Epoch 3: Train Loss = 17.733627319335938, Val Loss = 17.863916397094727, Train Time = 267 secs
+2023-11-13 07:32: Epoch 4: Train Loss = 17.030508041381836, Val Loss = 17.937952041625977, Train Time = 266 secs
+2023-11-13 07:36: Epoch 5: Train Loss = 16.601961135864258, Val Loss = 17.370237350463867, Train Time = 267 secs
+2023-11-13 07:41: Epoch 6: Train Loss = 16.115575790405273, Val Loss = 16.812097549438477, Train Time = 267 secs
+2023-11-13 07:45: Epoch 7: Train Loss = 15.836372375488281, Val Loss = 17.562992095947266, Train Time = 267 secs
+2023-11-13 07:50: Epoch 8: Train Loss = 15.710792541503906, Val Loss = 16.808008193969727, Train Time = 267 secs
+2023-11-13 07:54: Epoch 9: Train Loss = 15.503006935119629, Val Loss = 17.47952651977539, Train Time = 267 secs
+2023-11-13 07:58: Epoch 10: Train Loss = 15.414168357849121, Val Loss = 17.40119171142578, Train Time = 267 secs
+2023-11-13 08:03: Epoch 11: Train Loss = 15.127471923828125, Val Loss = 16.201126098632812, Train Time = 267 secs
+2023-11-13 08:07: Epoch 12: Train Loss = 15.010992050170898, Val Loss = 16.183921813964844, Train Time = 267 secs
+2023-11-13 08:12: Epoch 13: Train Loss = 14.959786415100098, Val Loss = 16.760915756225586, Train Time = 267 secs
+2023-11-13 08:16: Epoch 14: Train Loss = 14.859893798828125, Val Loss = 16.044998168945312, Train Time = 267 secs
+2023-11-13 08:21: Epoch 15: Train Loss = 14.750813484191895, Val Loss = 16.164512634277344, Train Time = 267 secs
+2023-11-13 08:25: Epoch 16: Train Loss = 14.606544494628906, Val Loss = 15.907049179077148, Train Time = 266 secs
+2023-11-13 08:30: Epoch 17: Train Loss = 14.549437522888184, Val Loss = 16.14076805114746, Train Time = 267 secs
+2023-11-13 08:34: Epoch 18: Train Loss = 14.488847732543945, Val Loss = 15.897974014282227, Train Time = 267 secs
+2023-11-13 08:39: Epoch 19: Train Loss = 14.396683692932129, Val Loss = 15.87726879119873, Train Time = 267 secs
+2023-11-13 08:43: Epoch 20: Train Loss = 14.355611801147461, Val Loss = 15.801026344299316, Train Time = 267 secs
+2023-11-13 08:47: Epoch 21: Train Loss = 14.233903884887695, Val Loss = 15.842379570007324, Train Time = 267 secs
+2023-11-13 08:52: Epoch 22: Train Loss = 14.202125549316406, Val Loss = 15.742082595825195, Train Time = 267 secs
+2023-11-13 08:56: Epoch 23: Train Loss = 14.152763366699219, Val Loss = 15.795783042907715, Train Time = 267 secs
+2023-11-13 09:01: Epoch 24: Train Loss = 14.122478485107422, Val Loss = 15.778077125549316, Train Time = 268 secs
+2023-11-13 09:05: Epoch 25: Train Loss = 14.05146312713623, Val Loss = 15.681852340698242, Train Time = 268 secs
+2023-11-13 09:10: Epoch 26: Train Loss = 13.997075080871582, Val Loss = 15.612777709960938, Train Time = 268 secs
+2023-11-13 09:14: Epoch 27: Train Loss = 13.958938598632812, Val Loss = 15.644378662109375, Train Time = 268 secs
+2023-11-13 09:19: Epoch 28: Train Loss = 13.925163269042969, Val Loss = 15.65839672088623, Train Time = 268 secs
+2023-11-13 09:23: Epoch 29: Train Loss = 13.906866073608398, Val Loss = 15.737330436706543, Train Time = 268 secs
+2023-11-13 09:28: Epoch 30: Train Loss = 13.869553565979004, Val Loss = 15.697895050048828, Train Time = 268 secs
+2023-11-13 09:32: Epoch 31: Train Loss = 13.798365592956543, Val Loss = 15.597764015197754, Train Time = 268 secs
+2023-11-13 09:37: Epoch 32: Train Loss = 13.771424293518066, Val Loss = 15.604745864868164, Train Time = 268 secs
+2023-11-13 09:41: Epoch 33: Train Loss = 13.768348693847656, Val Loss = 15.540549278259277, Train Time = 271 secs
+2023-11-13 09:46: Epoch 34: Train Loss = 13.739501953125, Val Loss = 15.55494499206543, Train Time = 270 secs
+2023-11-13 09:50: Epoch 35: Train Loss = 13.716668128967285, Val Loss = 15.661747932434082, Train Time = 270 secs
+2023-11-13 09:55: Epoch 36: Train Loss = 13.669235229492188, Val Loss = 15.493996620178223, Train Time = 269 secs
+2023-11-13 09:59: Epoch 37: Train Loss = 13.650864601135254, Val Loss = 15.705074310302734, Train Time = 269 secs
+2023-11-13 10:04: Epoch 38: Train Loss = 13.633011817932129, Val Loss = 15.61780071258545, Train Time = 268 secs
+2023-11-13 10:08: Epoch 39: Train Loss = 13.612198829650879, Val Loss = 15.536327362060547, Train Time = 267 secs
+2023-11-13 10:13: Epoch 40: Train Loss = 13.594732284545898, Val Loss = 15.520430564880371, Train Time = 267 secs
+2023-11-13 10:17: Epoch 41: Train Loss = 13.561537742614746, Val Loss = 15.53141975402832, Train Time = 266 secs
+2023-11-13 10:21: Epoch 42: Train Loss = 13.548910140991211, Val Loss = 15.533731460571289, Train Time = 267 secs
+2023-11-13 10:26: Epoch 43: Train Loss = 13.536415100097656, Val Loss = 15.614302635192871, Train Time = 267 secs
+2023-11-13 10:30: Epoch 44: Train Loss = 13.520049095153809, Val Loss = 15.48586368560791, Train Time = 267 secs
+2023-11-13 10:35: Epoch 45: Train Loss = 13.512953758239746, Val Loss = 15.52803897857666, Train Time = 267 secs
+2023-11-13 10:39: Epoch 46: Train Loss = 13.483236312866211, Val Loss = 15.593116760253906, Train Time = 268 secs
+2023-11-13 10:44: Epoch 47: Train Loss = 13.471043586730957, Val Loss = 15.53573226928711, Train Time = 268 secs
+2023-11-13 10:48: Epoch 48: Train Loss = 13.459739685058594, Val Loss = 15.534151077270508, Train Time = 268 secs
+2023-11-13 10:53: Epoch 49: Train Loss = 13.448691368103027, Val Loss = 15.55106258392334, Train Time = 268 secs
+2023-11-13 10:57: Epoch 50: Train Loss = 13.439160346984863, Val Loss = 15.506743431091309, Train Time = 269 secs
+2023-11-13 11:02: Epoch 51: Train Loss = 13.413440704345703, Val Loss = 15.534401893615723, Train Time = 268 secs
+2023-11-13 11:06: Epoch 52: Train Loss = 13.4072265625, Val Loss = 15.49919605255127, Train Time = 269 secs
+2023-11-13 11:11: Epoch 53: Train Loss = 13.400233268737793, Val Loss = 15.496288299560547, Train Time = 268 secs
+2023-11-13 11:15: Epoch 54: Train Loss = 13.388707160949707, Val Loss = 15.471290588378906, Train Time = 268 secs
+2023-11-13 11:20: Epoch 55: Train Loss = 13.38619613647461, Val Loss = 15.495585441589355, Train Time = 269 secs
+2023-11-13 11:24: Epoch 56: Train Loss = 13.361525535583496, Val Loss = 15.479649543762207, Train Time = 269 secs
+2023-11-13 11:29: Epoch 57: Train Loss = 13.356404304504395, Val Loss = 15.520661354064941, Train Time = 269 secs
+2023-11-13 11:33: Epoch 58: Train Loss = 13.352333068847656, Val Loss = 15.47782039642334, Train Time = 269 secs
+2023-11-13 11:38: Epoch 59: Train Loss = 13.342426300048828, Val Loss = 15.517306327819824, Train Time = 270 secs
+2023-11-13 11:42: Epoch 60: Train Loss = 13.3350248336792, Val Loss = 15.521032333374023, Train Time = 270 secs
+2023-11-13 11:47: Epoch 61: Train Loss = 13.321571350097656, Val Loss = 15.502498626708984, Train Time = 270 secs
+2023-11-13 11:51: Epoch 62: Train Loss = 13.31705379486084, Val Loss = 15.533500671386719, Train Time = 269 secs
+2023-11-13 11:56: Epoch 63: Train Loss = 13.310380935668945, Val Loss = 15.473014831542969, Train Time = 269 secs
+2023-11-13 12:00: Epoch 64: Train Loss = 13.306230545043945, Val Loss = 15.483633041381836, Train Time = 269 secs
+2023-11-13 12:00: Finish training, the total time of training is 17206.71 seconds.
+2023-11-13 12:00: Load the best model.
+2023-11-13 12:00: Load pretrained model parameters from "./experiments/PEMS08\2023-11-13-07-13-46\best_model".
+2023-11-13 12:00: Start evaluating!
+2023-11-13 12:01: Finish testing, the total time of testing is 33.20 seconds.
+2023-11-13 12:01: ============================================================================
+2023-11-13 12:01: Model total parameters: 1159714.
+2023-11-13 12:01: Finish evaluating, the performance of TADGCN on PEMS08 dataset is shown below:
+2023-11-13 12:01: Horizon 1: mae: 13.56, rmse: 21.60, mape: 10.81%.
+2023-11-13 12:01: Horizon 2: mae: 13.80, rmse: 22.29, mape: 10.81%.
+2023-11-13 12:01: Horizon 3: mae: 14.00, rmse: 22.87, mape: 10.57%.
+2023-11-13 12:01: Horizon 4: mae: 14.19, rmse: 23.36, mape: 10.68%.
+2023-11-13 12:01: Horizon 5: mae: 14.33, rmse: 23.75, mape: 10.71%.
+2023-11-13 12:01: Horizon 6: mae: 14.48, rmse: 24.10, mape: 10.71%.
+2023-11-13 12:01: Horizon 7: mae: 14.60, rmse: 24.39, mape: 10.79%.
+2023-11-13 12:01: Horizon 8: mae: 14.71, rmse: 24.60, mape: 10.71%.
+2023-11-13 12:01: Horizon 9: mae: 14.82, rmse: 24.85, mape: 10.87%.
+2023-11-13 12:01: Horizon 10: mae: 14.89, rmse: 25.01, mape: 10.78%.
+2023-11-13 12:01: Horizon 11: mae: 14.99, rmse: 25.17, mape: 10.73%.
+2023-11-13 12:01: Horizon 12: mae: 15.07, rmse: 25.39, mape: 10.82%.
+2023-11-13 12:01: Horizon 13: mae: 15.18, rmse: 25.55, mape: 10.82%.
+2023-11-13 12:01: Horizon 14: mae: 15.26, rmse: 25.75, mape: 10.95%.
+2023-11-13 12:01: Horizon 15: mae: 15.36, rmse: 25.91, mape: 10.95%.
+2023-11-13 12:01: Horizon 16: mae: 15.41, rmse: 26.04, mape: 10.90%.
+2023-11-13 12:01: Horizon 17: mae: 15.51, rmse: 26.24, mape: 11.05%.
+2023-11-13 12:01: Horizon 18: mae: 15.60, rmse: 26.41, mape: 11.12%.
+2023-11-13 12:01: Horizon 19: mae: 15.68, rmse: 26.55, mape: 11.21%.
+2023-11-13 12:01: Horizon 20: mae: 15.78, rmse: 26.71, mape: 11.28%.
+2023-11-13 12:01: Horizon 21: mae: 15.86, rmse: 26.85, mape: 11.41%.
+2023-11-13 12:01: Horizon 22: mae: 15.93, rmse: 26.94, mape: 11.41%.
+2023-11-13 12:01: Horizon 23: mae: 16.05, rmse: 27.13, mape: 11.51%.
+2023-11-13 12:01: Horizon 24: mae: 16.27, rmse: 27.43, mape: 11.69%.
+2023-11-13 12:01: Average Error: mae: 15.06, rmse: 25.20, mape: 10.97%.
+2023-11-13 12:01: ============================================================================

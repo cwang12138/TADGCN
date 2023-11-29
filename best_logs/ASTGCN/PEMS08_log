@@ -1,0 +1,329 @@
+CUDA: True cuda:0
+folder_dir: ASTGCN_h2d1w2_channel1_1.000000e-03
+params_path: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03
+create params directory ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03
+param list:
+CUDA	 cuda:0
+in_channels	 1
+nb_block	 2
+nb_chev_filter	 64
+nb_time_filter	 64
+time_strides	 2
+batch_size	 16
+graph_signal_matrix_filename	 ./data/PEMS08/PEMS08.npz
+start_epoch	 0
+epochs	 100
+ASTGCN_submodule(
+  (BlockList): ModuleList(
+    (0): ASTGCN_block(
+      (TAt): Temporal_Attention_layer()
+      (SAt): Spatial_Attention_layer()
+      (cheb_conv_SAt): cheb_conv_withSAt(
+        (Theta): ParameterList(
+            (0): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
+            (1): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
+            (2): Parameter containing: [torch.cuda.FloatTensor of size 1x64 (GPU 0)]
+        )
+      )
+      (time_conv): Conv2d(64, 64, kernel_size=(1, 3), stride=(1, 2), padding=(0, 1))
+      (residual_conv): Conv2d(1, 64, kernel_size=(1, 1), stride=(1, 2))
+      (ln): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+    )
+    (1): ASTGCN_block(
+      (TAt): Temporal_Attention_layer()
+      (SAt): Spatial_Attention_layer()
+      (cheb_conv_SAt): cheb_conv_withSAt(
+        (Theta): ParameterList(
+            (0): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
+            (1): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
+            (2): Parameter containing: [torch.cuda.FloatTensor of size 64x64 (GPU 0)]
+        )
+      )
+      (time_conv): Conv2d(64, 64, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+      (residual_conv): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (ln): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (final_conv): Conv2d(30, 24, kernel_size=(1, 64), stride=(1, 1))
+)
+Net's state_dict:
+BlockList.0.TAt.U1	torch.Size([170])
+BlockList.0.TAt.U2	torch.Size([1, 170])
+BlockList.0.TAt.U3	torch.Size([1])
+BlockList.0.TAt.be	torch.Size([1, 60, 60])
+BlockList.0.TAt.Ve	torch.Size([60, 60])
+BlockList.0.SAt.W1	torch.Size([60])
+BlockList.0.SAt.W2	torch.Size([1, 60])
+BlockList.0.SAt.W3	torch.Size([1])
+BlockList.0.SAt.bs	torch.Size([1, 170, 170])
+BlockList.0.SAt.Vs	torch.Size([170, 170])
+BlockList.0.cheb_conv_SAt.Theta.0	torch.Size([1, 64])
+BlockList.0.cheb_conv_SAt.Theta.1	torch.Size([1, 64])
+BlockList.0.cheb_conv_SAt.Theta.2	torch.Size([1, 64])
+BlockList.0.time_conv.weight	torch.Size([64, 64, 1, 3])
+BlockList.0.time_conv.bias	torch.Size([64])
+BlockList.0.residual_conv.weight	torch.Size([64, 1, 1, 1])
+BlockList.0.residual_conv.bias	torch.Size([64])
+BlockList.0.ln.weight	torch.Size([64])
+BlockList.0.ln.bias	torch.Size([64])
+BlockList.1.TAt.U1	torch.Size([170])
+BlockList.1.TAt.U2	torch.Size([64, 170])
+BlockList.1.TAt.U3	torch.Size([64])
+BlockList.1.TAt.be	torch.Size([1, 30, 30])
+BlockList.1.TAt.Ve	torch.Size([30, 30])
+BlockList.1.SAt.W1	torch.Size([30])
+BlockList.1.SAt.W2	torch.Size([64, 30])
+BlockList.1.SAt.W3	torch.Size([64])
+BlockList.1.SAt.bs	torch.Size([1, 170, 170])
+BlockList.1.SAt.Vs	torch.Size([170, 170])
+BlockList.1.cheb_conv_SAt.Theta.0	torch.Size([64, 64])
+BlockList.1.cheb_conv_SAt.Theta.1	torch.Size([64, 64])
+BlockList.1.cheb_conv_SAt.Theta.2	torch.Size([64, 64])
+BlockList.1.time_conv.weight	torch.Size([64, 64, 1, 3])
+BlockList.1.time_conv.bias	torch.Size([64])
+BlockList.1.residual_conv.weight	torch.Size([64, 64, 1, 1])
+BlockList.1.residual_conv.bias	torch.Size([64])
+BlockList.1.ln.weight	torch.Size([64])
+BlockList.1.ln.bias	torch.Size([64])
+final_conv.weight	torch.Size([24, 30, 1, 64])
+final_conv.bias	torch.Size([24])
+Net's total params: 226022
+Optimizer's state_dict:
+state	{}
+param_groups	[{'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': False, 'params': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]}]
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_0.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_1.params
+global step: 1000, training loss: 26.47, time: 146.46s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_2.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_3.params
+global step: 2000, training loss: 20.06, time: 282.56s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_4.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_5.params
+global step: 3000, training loss: 20.57, time: 415.27s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_6.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_7.params
+global step: 4000, training loss: 21.42, time: 546.80s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_8.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_9.params
+global step: 5000, training loss: 20.22, time: 678.30s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_10.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_11.params
+global step: 6000, training loss: 18.19, time: 809.81s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_13.params
+global step: 7000, training loss: 22.31, time: 941.27s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_14.params
+global step: 8000, training loss: 20.71, time: 1072.83s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_16.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_17.params
+global step: 9000, training loss: 18.54, time: 1204.48s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_19.params
+global step: 10000, training loss: 19.01, time: 1335.34s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_21.params
+global step: 11000, training loss: 18.67, time: 1466.05s
+global step: 12000, training loss: 19.84, time: 1596.76s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_24.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_25.params
+global step: 13000, training loss: 20.58, time: 1727.53s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_26.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_27.params
+global step: 14000, training loss: 17.89, time: 1858.46s
+global step: 15000, training loss: 18.55, time: 1989.42s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_29.params
+global step: 16000, training loss: 17.73, time: 2120.39s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_31.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_32.params
+global step: 17000, training loss: 15.91, time: 2251.49s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_33.params
+global step: 18000, training loss: 18.33, time: 2382.43s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_36.params
+global step: 19000, training loss: 16.69, time: 2513.37s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_37.params
+global step: 20000, training loss: 17.40, time: 2644.35s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_40.params
+global step: 21000, training loss: 17.38, time: 2775.33s
+global step: 22000, training loss: 17.72, time: 2906.30s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_43.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_44.params
+global step: 23000, training loss: 17.26, time: 3037.22s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_45.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_46.params
+global step: 24000, training loss: 17.07, time: 3168.17s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_48.params
+global step: 25000, training loss: 15.74, time: 3299.08s
+global step: 26000, training loss: 19.34, time: 3430.03s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_51.params
+global step: 27000, training loss: 14.88, time: 3560.96s
+global step: 28000, training loss: 16.16, time: 3691.90s
+global step: 29000, training loss: 18.99, time: 3822.79s
+global step: 30000, training loss: 16.41, time: 3953.65s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_58.params
+global step: 31000, training loss: 18.65, time: 4084.58s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_60.params
+global step: 32000, training loss: 16.43, time: 4215.58s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_62.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_63.params
+global step: 33000, training loss: 17.89, time: 4346.51s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_65.params
+global step: 34000, training loss: 15.99, time: 4477.47s
+global step: 35000, training loss: 15.26, time: 4608.42s
+global step: 36000, training loss: 16.49, time: 4739.29s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_71.params
+global step: 37000, training loss: 16.65, time: 4870.23s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_72.params
+global step: 38000, training loss: 15.08, time: 5001.11s
+global step: 39000, training loss: 16.61, time: 5131.96s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_76.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_77.params
+global step: 40000, training loss: 15.89, time: 5262.82s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_79.params
+global step: 41000, training loss: 15.25, time: 5393.64s
+global step: 42000, training loss: 15.91, time: 5524.36s
+global step: 43000, training loss: 17.80, time: 5655.12s
+global step: 44000, training loss: 16.87, time: 5786.24s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_86.params
+global step: 45000, training loss: 16.43, time: 5917.01s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_88.params
+global step: 46000, training loss: 15.66, time: 6048.35s
+global step: 47000, training loss: 17.34, time: 6179.16s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_91.params
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_92.params
+global step: 48000, training loss: 17.19, time: 6309.97s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_93.params
+global step: 49000, training loss: 17.04, time: 6440.67s
+global step: 50000, training loss: 17.00, time: 6571.51s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_98.params
+global step: 51000, training loss: 17.43, time: 6702.42s
+save parameters to file: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_99.params
+best epoch: 99
+load weight from: ./experiments/PEMS08/2023-08-23-06-08-57\ASTGCN_h2d1w2_channel1_1.000000e-03\epoch_99.params
+predicting data set batch 1 / 173
+predicting data set batch 101 / 173
+input: (2761, 170, 1, 60)
+prediction: (2761, 170, 24)
+data_target_tensor: (2761, 170, 24)
+current epoch: 99, predict 0 points
+MAE: 13.93
+RMSE: 22.16
+MAPE: 0.10
+current epoch: 99, predict 1 points
+MAE: 14.82
+RMSE: 23.74
+MAPE: 0.10
+current epoch: 99, predict 2 points
+MAE: 15.20
+RMSE: 24.77
+MAPE: 0.11
+current epoch: 99, predict 3 points
+MAE: 15.53
+RMSE: 25.38
+MAPE: 0.11
+current epoch: 99, predict 4 points
+MAE: 15.74
+RMSE: 25.94
+MAPE: 0.11
+current epoch: 99, predict 5 points
+MAE: 16.07
+RMSE: 26.46
+MAPE: 0.11
+current epoch: 99, predict 6 points
+MAE: 16.31
+RMSE: 27.01
+MAPE: 0.11
+current epoch: 99, predict 7 points
+MAE: 16.63
+RMSE: 27.47
+MAPE: 0.12
+current epoch: 99, predict 8 points
+MAE: 16.71
+RMSE: 27.74
+MAPE: 0.12
+current epoch: 99, predict 9 points
+MAE: 16.96
+RMSE: 28.08
+MAPE: 0.12
+current epoch: 99, predict 10 points
+MAE: 17.16
+RMSE: 28.36
+MAPE: 0.12
+current epoch: 99, predict 11 points
+MAE: 17.82
+RMSE: 29.25
+MAPE: 0.12
+current epoch: 99, predict 12 points
+MAE: 19.33
+RMSE: 30.99
+MAPE: 0.13
+current epoch: 99, predict 13 points
+MAE: 20.50
+RMSE: 32.56
+MAPE: 0.14
+current epoch: 99, predict 14 points
+MAE: 21.25
+RMSE: 33.57
+MAPE: 0.14
+current epoch: 99, predict 15 points
+MAE: 21.98
+RMSE: 34.54
+MAPE: 0.15
+current epoch: 99, predict 16 points
+MAE: 22.41
+RMSE: 35.09
+MAPE: 0.15
+current epoch: 99, predict 17 points
+MAE: 23.10
+RMSE: 36.00
+MAPE: 0.16
+current epoch: 99, predict 18 points
+MAE: 23.74
+RMSE: 36.87
+MAPE: 0.16
+current epoch: 99, predict 19 points
+MAE: 24.25
+RMSE: 37.58
+MAPE: 0.16
+current epoch: 99, predict 20 points
+MAE: 25.02
+RMSE: 38.63
+MAPE: 0.16
+current epoch: 99, predict 21 points
+MAE: 25.38
+RMSE: 39.13
+MAPE: 0.17
+current epoch: 99, predict 22 points
+MAE: 26.33
+RMSE: 40.39
+MAPE: 0.17
+current epoch: 99, predict 23 points
+MAE: 27.15
+RMSE: 41.53
+MAPE: 0.17
+all MAE: 19.72
+all RMSE: 31.89
+all MAPE: 0.13
+[13.933974, 22.16097941854246, 0.099085115, 14.818276, 23.74245228545998, 0.103023276, 15.201488, 24.767878692803027, 0.106037475, 15.526747, 25.37705887583311, 0.10766719, 15.739329, 25.944116249522743, 0.10916049, 16.069279, 26.464445626617966, 0.11245016, 16.309956, 27.010929862395518, 0.11326922, 16.629417, 27.47499195824211, 0.115316756, 16.71399, 27.739375649530782, 0.11559771, 16.959415, 28.079164038927512, 0.11538407, 17.1596, 28.3556396042001, 0.118410066, 17.816914, 29.2475678826596, 0.121013075, 19.329454, 30.99165379550547, 0.13023886, 20.498896, 32.564661111706855, 0.13780774, 21.245913, 33.567695201380936, 0.14329307, 21.980026, 34.53647266783244, 0.15128633, 22.412094, 35.09454132845573, 0.15167965, 23.100496, 36.00217007348307, 0.15783493, 23.735796, 36.87406149494265, 0.15711327, 24.250477, 37.581646144802185, 0.1630138, 25.023546, 38.62643795361378, 0.16292696, 25.380177, 39.13300512155628, 0.16512759, 26.333603, 40.390998245374085, 0.16914311, 27.15104, 41.53039026339251, 0.17402564, 19.72166, 31.890106331524475, 0.13332923]
+test time: 13 seconds.
+Horizon 1: mae: 13.95, rmse: 22.04, mape: 9.91%.
+Horizon 2: mae: 14.84, rmse: 23.63, mape: 10.30%.
+Horizon 3: mae: 15.22, rmse: 24.67, mape: 10.60%.
+Horizon 4: mae: 15.55, rmse: 25.28, mape: 10.77%.
+Horizon 5: mae: 15.76, rmse: 25.85, mape: 10.92%.
+Horizon 6: mae: 16.09, rmse: 26.37, mape: 11.25%.
+Horizon 7: mae: 16.33, rmse: 26.92, mape: 11.33%.
+Horizon 8: mae: 16.65, rmse: 27.39, mape: 11.53%.
+Horizon 9: mae: 16.74, rmse: 27.66, mape: 11.56%.
+Horizon 10: mae: 16.99, rmse: 28.00, mape: 11.54%.
+Horizon 11: mae: 17.19, rmse: 28.28, mape: 11.84%.
+Horizon 12: mae: 17.85, rmse: 29.18, mape: 12.10%.
+Horizon 13: mae: 19.36, rmse: 30.94, mape: 13.02%.
+Horizon 14: mae: 20.54, rmse: 32.52, mape: 13.78%.
+Horizon 15: mae: 21.28, rmse: 33.52, mape: 14.33%.
+Horizon 16: mae: 22.02, rmse: 34.49, mape: 15.13%.
+Horizon 17: mae: 22.45, rmse: 35.05, mape: 15.17%.
+Horizon 18: mae: 23.14, rmse: 35.96, mape: 15.78%.
+Horizon 19: mae: 23.78, rmse: 36.83, mape: 15.71%.
+Horizon 20: mae: 24.30, rmse: 37.54, mape: 16.30%.
+Horizon 21: mae: 25.07, rmse: 38.59, mape: 16.29%.
+Horizon 22: mae: 25.43, rmse: 39.10, mape: 16.51%.
+Horizon 23: mae: 26.39, rmse: 40.35, mape: 16.91%.
+Horizon 24: mae: 27.21, rmse: 41.50, mape: 17.40%.
+Average Error: mae: 19.76, rmse: 31.32, mape: 13.33%.

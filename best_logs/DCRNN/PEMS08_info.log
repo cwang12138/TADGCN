@@ -1,0 +1,389 @@
+2023-08-03 21:52:03,572 - model.dcrnn_supervisor - INFO - Log directory: experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203/
+2023-08-03 21:52:12,618 - model.dcrnn_supervisor - INFO - Model created
+2023-08-03 21:52:12,618 - model.dcrnn_supervisor - INFO - Start training ...
+2023-08-03 21:52:12,618 - model.dcrnn_supervisor - INFO - num_batches:167
+2023-08-03 21:52:16,117 - model.dcrnn_supervisor - INFO - Total trainable parameters 372353
+2023-08-03 21:57:44,817 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 21:57:44,821 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 21:58:39,802 - model.dcrnn_supervisor - INFO - Epoch [1/100] (167) train_mae: 21.0815, val_mae: 35.4449, lr: 0.010000, 387.2s
+2023-08-03 21:58:39,810 - model.dcrnn_supervisor - INFO - Saved model at 1
+2023-08-03 21:58:39,810 - model.dcrnn_supervisor - INFO - Val loss decrease from inf to 35.4449, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo1.tar
+2023-08-03 22:04:12,484 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:04:12,484 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:05:07,785 - model.dcrnn_supervisor - INFO - Epoch [2/100] (334) train_mae: 15.0382, val_mae: 36.6969, lr: 0.010000, 388.0s
+2023-08-03 22:10:38,161 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:10:38,161 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:11:33,482 - model.dcrnn_supervisor - INFO - Epoch [3/100] (501) train_mae: 14.7250, val_mae: 28.1068, lr: 0.010000, 385.7s
+2023-08-03 22:11:33,485 - model.dcrnn_supervisor - INFO - Saved model at 3
+2023-08-03 22:11:33,486 - model.dcrnn_supervisor - INFO - Val loss decrease from 35.4449 to 28.1068, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo3.tar
+2023-08-03 22:17:02,910 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:17:02,910 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:17:58,074 - model.dcrnn_supervisor - INFO - Epoch [4/100] (668) train_mae: 14.7422, val_mae: 36.9018, lr: 0.010000, 384.6s
+2023-08-03 22:23:26,159 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:23:26,159 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:24:21,030 - model.dcrnn_supervisor - INFO - Epoch [5/100] (835) train_mae: 14.8541, val_mae: 38.0760, lr: 0.010000, 383.0s
+2023-08-03 22:29:48,648 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:29:48,648 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:30:43,581 - model.dcrnn_supervisor - INFO - Epoch [6/100] (1002) train_mae: 14.3146, val_mae: 26.0781, lr: 0.010000, 382.6s
+2023-08-03 22:30:43,589 - model.dcrnn_supervisor - INFO - Saved model at 6
+2023-08-03 22:30:43,589 - model.dcrnn_supervisor - INFO - Val loss decrease from 28.1068 to 26.0781, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo6.tar
+2023-08-03 22:36:11,283 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:36:11,283 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:37:06,133 - model.dcrnn_supervisor - INFO - Epoch [7/100] (1169) train_mae: 14.3459, val_mae: 27.2731, lr: 0.010000, 382.5s
+2023-08-03 22:42:33,743 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:42:33,743 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:43:28,594 - model.dcrnn_supervisor - INFO - Epoch [8/100] (1336) train_mae: 14.2679, val_mae: 31.9131, lr: 0.010000, 382.5s
+2023-08-03 22:48:56,064 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:48:56,064 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:49:50,991 - model.dcrnn_supervisor - INFO - Epoch [9/100] (1503) train_mae: 14.0271, val_mae: 25.6503, lr: 0.010000, 382.4s
+2023-08-03 22:49:50,995 - model.dcrnn_supervisor - INFO - Saved model at 9
+2023-08-03 22:49:50,995 - model.dcrnn_supervisor - INFO - Val loss decrease from 26.0781 to 25.6503, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo9.tar
+2023-08-03 22:55:18,320 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 22:55:18,320 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 22:56:13,377 - model.dcrnn_supervisor - INFO - Epoch [10/100] (1670) train_mae: 13.7331, val_mae: 25.3843, lr: 0.010000, 382.4s
+2023-08-03 22:57:08,327 - model.dcrnn_supervisor - INFO - Epoch [10/100] (1670) train_mae: 13.7331, test_mae: 24.8722,  lr: 0.010000, 382.4s
+2023-08-03 22:57:08,335 - model.dcrnn_supervisor - INFO - Saved model at 10
+2023-08-03 22:57:08,335 - model.dcrnn_supervisor - INFO - Val loss decrease from 25.6503 to 25.3843, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo10.tar
+2023-08-03 23:02:35,685 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:02:35,686 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:03:30,524 - model.dcrnn_supervisor - INFO - Epoch [11/100] (1837) train_mae: 13.6466, val_mae: 24.3658, lr: 0.010000, 382.2s
+2023-08-03 23:03:30,528 - model.dcrnn_supervisor - INFO - Saved model at 11
+2023-08-03 23:03:30,528 - model.dcrnn_supervisor - INFO - Val loss decrease from 25.3843 to 24.3658, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo11.tar
+2023-08-03 23:08:57,618 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:08:57,618 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:09:52,467 - model.dcrnn_supervisor - INFO - Epoch [12/100] (2004) train_mae: 13.7639, val_mae: 24.0989, lr: 0.010000, 381.9s
+2023-08-03 23:09:52,474 - model.dcrnn_supervisor - INFO - Saved model at 12
+2023-08-03 23:09:52,474 - model.dcrnn_supervisor - INFO - Val loss decrease from 24.3658 to 24.0989, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo12.tar
+2023-08-03 23:15:19,955 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:15:19,956 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:16:14,911 - model.dcrnn_supervisor - INFO - Epoch [13/100] (2171) train_mae: 13.7213, val_mae: 23.3460, lr: 0.010000, 382.4s
+2023-08-03 23:16:14,915 - model.dcrnn_supervisor - INFO - Saved model at 13
+2023-08-03 23:16:14,915 - model.dcrnn_supervisor - INFO - Val loss decrease from 24.0989 to 23.3460, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo13.tar
+2023-08-03 23:21:42,538 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:21:42,538 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:22:37,472 - model.dcrnn_supervisor - INFO - Epoch [14/100] (2338) train_mae: 13.4826, val_mae: 22.5027, lr: 0.010000, 382.6s
+2023-08-03 23:22:37,476 - model.dcrnn_supervisor - INFO - Saved model at 14
+2023-08-03 23:22:37,476 - model.dcrnn_supervisor - INFO - Val loss decrease from 23.3460 to 22.5027, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo14.tar
+2023-08-03 23:28:04,985 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:28:04,985 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:28:59,865 - model.dcrnn_supervisor - INFO - Epoch [15/100] (2505) train_mae: 13.4270, val_mae: 25.3807, lr: 0.010000, 382.4s
+2023-08-03 23:34:27,357 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:34:27,357 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:35:22,236 - model.dcrnn_supervisor - INFO - Epoch [16/100] (2672) train_mae: 13.5811, val_mae: 23.7932, lr: 0.010000, 382.4s
+2023-08-03 23:40:49,703 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:40:49,703 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:41:44,529 - model.dcrnn_supervisor - INFO - Epoch [17/100] (2839) train_mae: 13.3020, val_mae: 23.6367, lr: 0.010000, 382.3s
+2023-08-03 23:47:12,068 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:47:12,069 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:48:07,005 - model.dcrnn_supervisor - INFO - Epoch [18/100] (3006) train_mae: 13.2431, val_mae: 22.7174, lr: 0.010000, 382.5s
+2023-08-03 23:53:34,647 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:53:34,647 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-03 23:54:29,600 - model.dcrnn_supervisor - INFO - Epoch [19/100] (3173) train_mae: 13.1786, val_mae: 21.8280, lr: 0.010000, 382.6s
+2023-08-03 23:54:29,607 - model.dcrnn_supervisor - INFO - Saved model at 19
+2023-08-03 23:54:29,607 - model.dcrnn_supervisor - INFO - Val loss decrease from 22.5027 to 21.8280, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo19.tar
+2023-08-03 23:59:57,135 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-03 23:59:57,135 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:00:52,065 - model.dcrnn_supervisor - INFO - Epoch [20/100] (3340) train_mae: 13.2884, val_mae: 23.2131, lr: 0.000100, 382.5s
+2023-08-04 00:01:46,931 - model.dcrnn_supervisor - INFO - Epoch [20/100] (3340) train_mae: 13.2884, test_mae: 22.8480,  lr: 0.000100, 382.5s
+2023-08-04 00:07:14,556 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:07:14,556 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:08:09,459 - model.dcrnn_supervisor - INFO - Epoch [21/100] (3507) train_mae: 13.1264, val_mae: 22.6483, lr: 0.001000, 382.5s
+2023-08-04 00:13:36,914 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:13:36,914 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:14:31,880 - model.dcrnn_supervisor - INFO - Epoch [22/100] (3674) train_mae: 13.0702, val_mae: 21.7086, lr: 0.001000, 382.4s
+2023-08-04 00:14:31,884 - model.dcrnn_supervisor - INFO - Saved model at 22
+2023-08-04 00:14:31,884 - model.dcrnn_supervisor - INFO - Val loss decrease from 21.8280 to 21.7086, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo22.tar
+2023-08-04 00:19:59,365 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:19:59,365 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:20:54,208 - model.dcrnn_supervisor - INFO - Epoch [23/100] (3841) train_mae: 13.1633, val_mae: 21.3722, lr: 0.001000, 382.3s
+2023-08-04 00:20:54,216 - model.dcrnn_supervisor - INFO - Saved model at 23
+2023-08-04 00:20:54,216 - model.dcrnn_supervisor - INFO - Val loss decrease from 21.7086 to 21.3722, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo23.tar
+2023-08-04 00:26:21,781 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:26:21,781 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:27:16,782 - model.dcrnn_supervisor - INFO - Epoch [24/100] (4008) train_mae: 13.0193, val_mae: 26.9153, lr: 0.001000, 382.6s
+2023-08-04 00:32:44,170 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:32:44,170 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:33:39,084 - model.dcrnn_supervisor - INFO - Epoch [25/100] (4175) train_mae: 13.1344, val_mae: 21.0034, lr: 0.001000, 382.3s
+2023-08-04 00:33:39,088 - model.dcrnn_supervisor - INFO - Saved model at 25
+2023-08-04 00:33:39,088 - model.dcrnn_supervisor - INFO - Val loss decrease from 21.3722 to 21.0034, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo25.tar
+2023-08-04 00:39:06,448 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:39:06,448 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:40:01,335 - model.dcrnn_supervisor - INFO - Epoch [26/100] (4342) train_mae: 12.9350, val_mae: 20.8702, lr: 0.001000, 382.2s
+2023-08-04 00:40:01,341 - model.dcrnn_supervisor - INFO - Saved model at 26
+2023-08-04 00:40:01,342 - model.dcrnn_supervisor - INFO - Val loss decrease from 21.0034 to 20.8702, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo26.tar
+2023-08-04 00:45:28,658 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:45:28,658 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:46:23,420 - model.dcrnn_supervisor - INFO - Epoch [27/100] (4509) train_mae: 12.9875, val_mae: 22.3235, lr: 0.001000, 382.1s
+2023-08-04 00:51:50,850 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:51:50,850 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:52:45,787 - model.dcrnn_supervisor - INFO - Epoch [28/100] (4676) train_mae: 12.8778, val_mae: 23.2001, lr: 0.001000, 382.4s
+2023-08-04 00:58:13,357 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 00:58:13,358 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 00:59:08,180 - model.dcrnn_supervisor - INFO - Epoch [29/100] (4843) train_mae: 13.0425, val_mae: 22.1377, lr: 0.001000, 382.4s
+2023-08-04 01:04:35,824 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:04:35,824 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:05:30,754 - model.dcrnn_supervisor - INFO - Epoch [30/100] (5010) train_mae: 12.9567, val_mae: 21.9522, lr: 0.000010, 382.6s
+2023-08-04 01:06:25,650 - model.dcrnn_supervisor - INFO - Epoch [30/100] (5010) train_mae: 12.9567, test_mae: 21.6707,  lr: 0.000010, 382.6s
+2023-08-04 01:11:53,399 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:11:53,399 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:12:48,263 - model.dcrnn_supervisor - INFO - Epoch [31/100] (5177) train_mae: 12.8834, val_mae: 22.0065, lr: 0.000100, 382.6s
+2023-08-04 01:18:15,811 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:18:15,812 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:19:10,695 - model.dcrnn_supervisor - INFO - Epoch [32/100] (5344) train_mae: 12.8260, val_mae: 21.3005, lr: 0.000100, 382.4s
+2023-08-04 01:24:38,221 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:24:38,221 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:25:33,139 - model.dcrnn_supervisor - INFO - Epoch [33/100] (5511) train_mae: 12.8118, val_mae: 20.7533, lr: 0.000100, 382.4s
+2023-08-04 01:25:33,142 - model.dcrnn_supervisor - INFO - Saved model at 33
+2023-08-04 01:25:33,142 - model.dcrnn_supervisor - INFO - Val loss decrease from 20.8702 to 20.7533, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo33.tar
+2023-08-04 01:31:00,660 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:31:00,660 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:31:55,515 - model.dcrnn_supervisor - INFO - Epoch [34/100] (5678) train_mae: 12.7727, val_mae: 21.3489, lr: 0.000100, 382.4s
+2023-08-04 01:37:23,127 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:37:23,127 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:38:17,948 - model.dcrnn_supervisor - INFO - Epoch [35/100] (5845) train_mae: 12.6889, val_mae: 22.5459, lr: 0.000100, 382.4s
+2023-08-04 01:43:45,628 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:43:45,628 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:44:40,591 - model.dcrnn_supervisor - INFO - Epoch [36/100] (6012) train_mae: 12.7005, val_mae: 20.5627, lr: 0.000100, 382.6s
+2023-08-04 01:44:40,598 - model.dcrnn_supervisor - INFO - Saved model at 36
+2023-08-04 01:44:40,598 - model.dcrnn_supervisor - INFO - Val loss decrease from 20.7533 to 20.5627, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo36.tar
+2023-08-04 01:50:08,061 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:50:08,061 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:51:03,007 - model.dcrnn_supervisor - INFO - Epoch [37/100] (6179) train_mae: 12.9355, val_mae: 21.6612, lr: 0.000100, 382.4s
+2023-08-04 01:56:30,921 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 01:56:30,921 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 01:57:25,960 - model.dcrnn_supervisor - INFO - Epoch [38/100] (6346) train_mae: 12.7789, val_mae: 20.6335, lr: 0.000100, 383.0s
+2023-08-04 02:02:53,642 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:02:53,642 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:03:48,546 - model.dcrnn_supervisor - INFO - Epoch [39/100] (6513) train_mae: 12.7255, val_mae: 22.2180, lr: 0.000100, 382.6s
+2023-08-04 02:09:16,500 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:09:16,500 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:10:11,426 - model.dcrnn_supervisor - INFO - Epoch [40/100] (6680) train_mae: 12.8156, val_mae: 21.0215, lr: 0.000001, 382.9s
+2023-08-04 02:11:06,460 - model.dcrnn_supervisor - INFO - Epoch [40/100] (6680) train_mae: 12.8156, test_mae: 20.9072,  lr: 0.000001, 382.9s
+2023-08-04 02:16:34,196 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:16:34,196 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:17:29,176 - model.dcrnn_supervisor - INFO - Epoch [41/100] (6847) train_mae: 12.6214, val_mae: 22.0793, lr: 0.000010, 382.7s
+2023-08-04 02:22:56,652 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:22:56,652 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:23:51,560 - model.dcrnn_supervisor - INFO - Epoch [42/100] (7014) train_mae: 12.6348, val_mae: 22.1164, lr: 0.000010, 382.4s
+2023-08-04 02:29:19,288 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:29:19,288 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:30:14,180 - model.dcrnn_supervisor - INFO - Epoch [43/100] (7181) train_mae: 12.8090, val_mae: 21.4145, lr: 0.000010, 382.6s
+2023-08-04 02:35:41,642 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:35:41,642 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:36:36,572 - model.dcrnn_supervisor - INFO - Epoch [44/100] (7348) train_mae: 12.5422, val_mae: 20.8796, lr: 0.000010, 382.4s
+2023-08-04 02:42:03,832 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:42:03,832 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:42:58,749 - model.dcrnn_supervisor - INFO - Epoch [45/100] (7515) train_mae: 12.4845, val_mae: 20.5266, lr: 0.000010, 382.2s
+2023-08-04 02:42:58,753 - model.dcrnn_supervisor - INFO - Saved model at 45
+2023-08-04 02:42:58,753 - model.dcrnn_supervisor - INFO - Val loss decrease from 20.5627 to 20.5266, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo45.tar
+2023-08-04 02:48:26,181 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:48:26,181 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:49:20,968 - model.dcrnn_supervisor - INFO - Epoch [46/100] (7682) train_mae: 12.5278, val_mae: 20.7051, lr: 0.000010, 382.2s
+2023-08-04 02:54:48,481 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 02:54:48,481 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 02:55:43,241 - model.dcrnn_supervisor - INFO - Epoch [47/100] (7849) train_mae: 12.4722, val_mae: 20.2067, lr: 0.000010, 382.3s
+2023-08-04 02:55:43,248 - model.dcrnn_supervisor - INFO - Saved model at 47
+2023-08-04 02:55:43,248 - model.dcrnn_supervisor - INFO - Val loss decrease from 20.5266 to 20.2067, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo47.tar
+2023-08-04 03:01:10,989 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:01:10,989 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:02:05,937 - model.dcrnn_supervisor - INFO - Epoch [48/100] (8016) train_mae: 12.5378, val_mae: 21.6800, lr: 0.000010, 382.7s
+2023-08-04 03:07:33,523 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:07:33,523 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:08:28,445 - model.dcrnn_supervisor - INFO - Epoch [49/100] (8183) train_mae: 12.5142, val_mae: 20.4677, lr: 0.000010, 382.5s
+2023-08-04 03:13:56,146 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:13:56,146 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:14:51,066 - model.dcrnn_supervisor - INFO - Epoch [50/100] (8350) train_mae: 12.5719, val_mae: 20.5718, lr: 0.000000, 382.6s
+2023-08-04 03:15:45,929 - model.dcrnn_supervisor - INFO - Epoch [50/100] (8350) train_mae: 12.5719, test_mae: 20.5380,  lr: 0.000000, 382.6s
+2023-08-04 03:21:13,554 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:21:13,554 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:22:08,497 - model.dcrnn_supervisor - INFO - Epoch [51/100] (8517) train_mae: 12.4519, val_mae: 20.7261, lr: 0.000001, 382.6s
+2023-08-04 03:27:36,169 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:27:36,169 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:28:31,062 - model.dcrnn_supervisor - INFO - Epoch [52/100] (8684) train_mae: 12.5211, val_mae: 20.2704, lr: 0.000001, 382.6s
+2023-08-04 03:33:58,633 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:33:58,633 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:34:53,590 - model.dcrnn_supervisor - INFO - Epoch [53/100] (8851) train_mae: 12.4511, val_mae: 20.1199, lr: 0.000001, 382.5s
+2023-08-04 03:34:53,594 - model.dcrnn_supervisor - INFO - Saved model at 53
+2023-08-04 03:34:53,594 - model.dcrnn_supervisor - INFO - Val loss decrease from 20.2067 to 20.1199, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo53.tar
+2023-08-04 03:40:21,126 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:40:21,127 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:41:16,023 - model.dcrnn_supervisor - INFO - Epoch [54/100] (9018) train_mae: 12.5061, val_mae: 20.6245, lr: 0.000001, 382.4s
+2023-08-04 03:46:43,522 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:46:43,522 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:47:38,360 - model.dcrnn_supervisor - INFO - Epoch [55/100] (9185) train_mae: 12.5354, val_mae: 21.1450, lr: 0.000001, 382.3s
+2023-08-04 03:53:05,909 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:53:05,909 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 03:54:00,760 - model.dcrnn_supervisor - INFO - Epoch [56/100] (9352) train_mae: 12.6063, val_mae: 20.3625, lr: 0.000001, 382.4s
+2023-08-04 03:59:28,267 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 03:59:28,267 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:00:23,092 - model.dcrnn_supervisor - INFO - Epoch [57/100] (9519) train_mae: 12.4124, val_mae: 20.3294, lr: 0.000001, 382.3s
+2023-08-04 04:05:50,555 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:05:50,556 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:06:45,500 - model.dcrnn_supervisor - INFO - Epoch [58/100] (9686) train_mae: 12.4656, val_mae: 20.1759, lr: 0.000001, 382.4s
+2023-08-04 04:12:13,126 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:12:13,126 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:13:08,110 - model.dcrnn_supervisor - INFO - Epoch [59/100] (9853) train_mae: 12.4388, val_mae: 19.9692, lr: 0.000001, 382.6s
+2023-08-04 04:13:08,117 - model.dcrnn_supervisor - INFO - Saved model at 59
+2023-08-04 04:13:08,117 - model.dcrnn_supervisor - INFO - Val loss decrease from 20.1199 to 19.9692, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo59.tar
+2023-08-04 04:18:35,626 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:18:35,626 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:19:30,475 - model.dcrnn_supervisor - INFO - Epoch [60/100] (10020) train_mae: 12.5243, val_mae: 22.7661, lr: 0.000001, 382.4s
+2023-08-04 04:20:25,387 - model.dcrnn_supervisor - INFO - Epoch [60/100] (10020) train_mae: 12.5243, test_mae: 22.6509,  lr: 0.000001, 382.4s
+2023-08-04 04:25:52,836 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:25:52,836 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:26:47,697 - model.dcrnn_supervisor - INFO - Epoch [61/100] (10187) train_mae: 12.5891, val_mae: 20.2679, lr: 0.000001, 382.3s
+2023-08-04 04:32:15,100 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:32:15,100 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:33:10,003 - model.dcrnn_supervisor - INFO - Epoch [62/100] (10354) train_mae: 12.4257, val_mae: 21.0111, lr: 0.000001, 382.3s
+2023-08-04 04:38:37,551 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:38:37,551 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:39:32,477 - model.dcrnn_supervisor - INFO - Epoch [63/100] (10521) train_mae: 12.4411, val_mae: 20.1070, lr: 0.000001, 382.5s
+2023-08-04 04:45:00,035 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:45:00,035 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:45:55,014 - model.dcrnn_supervisor - INFO - Epoch [64/100] (10688) train_mae: 12.5435, val_mae: 20.6371, lr: 0.000001, 382.5s
+2023-08-04 04:51:22,624 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:51:22,624 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:52:17,498 - model.dcrnn_supervisor - INFO - Epoch [65/100] (10855) train_mae: 12.5206, val_mae: 21.1223, lr: 0.000001, 382.5s
+2023-08-04 04:57:44,627 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 04:57:44,627 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 04:58:39,498 - model.dcrnn_supervisor - INFO - Epoch [66/100] (11022) train_mae: 12.5344, val_mae: 21.2367, lr: 0.000001, 382.0s
+2023-08-04 05:04:07,229 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:04:07,229 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:05:02,171 - model.dcrnn_supervisor - INFO - Epoch [67/100] (11189) train_mae: 12.5589, val_mae: 20.2562, lr: 0.000001, 382.7s
+2023-08-04 05:10:29,417 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:10:29,417 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:11:24,341 - model.dcrnn_supervisor - INFO - Epoch [68/100] (11356) train_mae: 12.6949, val_mae: 21.3582, lr: 0.000001, 382.2s
+2023-08-04 05:16:51,802 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:16:51,802 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:17:46,647 - model.dcrnn_supervisor - INFO - Epoch [69/100] (11523) train_mae: 12.7475, val_mae: 20.0495, lr: 0.000001, 382.3s
+2023-08-04 05:23:14,075 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:23:14,075 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:24:09,044 - model.dcrnn_supervisor - INFO - Epoch [70/100] (11690) train_mae: 12.7575, val_mae: 19.9631, lr: 0.000001, 382.4s
+2023-08-04 05:25:03,921 - model.dcrnn_supervisor - INFO - Epoch [70/100] (11690) train_mae: 12.7575, test_mae: 20.1114,  lr: 0.000001, 382.4s
+2023-08-04 05:25:03,925 - model.dcrnn_supervisor - INFO - Saved model at 70
+2023-08-04 05:25:03,925 - model.dcrnn_supervisor - INFO - Val loss decrease from 19.9692 to 19.9631, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo70.tar
+2023-08-04 05:30:31,356 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:30:31,356 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:31:26,319 - model.dcrnn_supervisor - INFO - Epoch [71/100] (11857) train_mae: 12.6761, val_mae: 20.5225, lr: 0.000001, 382.4s
+2023-08-04 05:36:53,987 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:36:53,987 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:37:48,880 - model.dcrnn_supervisor - INFO - Epoch [72/100] (12024) train_mae: 12.6224, val_mae: 20.9113, lr: 0.000001, 382.6s
+2023-08-04 05:43:16,564 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:43:16,564 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:44:11,443 - model.dcrnn_supervisor - INFO - Epoch [73/100] (12191) train_mae: 12.5895, val_mae: 20.6647, lr: 0.000001, 382.6s
+2023-08-04 05:49:39,145 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:49:39,146 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:50:34,019 - model.dcrnn_supervisor - INFO - Epoch [74/100] (12358) train_mae: 12.7030, val_mae: 19.7724, lr: 0.000001, 382.6s
+2023-08-04 05:50:34,027 - model.dcrnn_supervisor - INFO - Saved model at 74
+2023-08-04 05:50:34,027 - model.dcrnn_supervisor - INFO - Val loss decrease from 19.9631 to 19.7724, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo74.tar
+2023-08-04 05:56:01,681 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 05:56:01,682 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 05:56:56,557 - model.dcrnn_supervisor - INFO - Epoch [75/100] (12525) train_mae: 12.5808, val_mae: 19.9893, lr: 0.000001, 382.5s
+2023-08-04 06:02:24,282 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:02:24,282 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:03:19,185 - model.dcrnn_supervisor - INFO - Epoch [76/100] (12692) train_mae: 12.7916, val_mae: 20.2800, lr: 0.000001, 382.6s
+2023-08-04 06:08:46,990 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:08:46,990 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:09:41,860 - model.dcrnn_supervisor - INFO - Epoch [77/100] (12859) train_mae: 12.6576, val_mae: 20.8377, lr: 0.000001, 382.7s
+2023-08-04 06:15:09,573 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:15:09,573 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:16:04,469 - model.dcrnn_supervisor - INFO - Epoch [78/100] (13026) train_mae: 12.7354, val_mae: 21.3202, lr: 0.000001, 382.6s
+2023-08-04 06:21:32,014 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:21:32,014 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:22:26,913 - model.dcrnn_supervisor - INFO - Epoch [79/100] (13193) train_mae: 12.7947, val_mae: 21.7349, lr: 0.000001, 382.4s
+2023-08-04 06:27:54,649 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:27:54,649 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:28:49,498 - model.dcrnn_supervisor - INFO - Epoch [80/100] (13360) train_mae: 13.0471, val_mae: 20.3944, lr: 0.000001, 382.6s
+2023-08-04 06:29:44,333 - model.dcrnn_supervisor - INFO - Epoch [80/100] (13360) train_mae: 13.0471, test_mae: 20.3425,  lr: 0.000001, 382.6s
+2023-08-04 06:35:11,997 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:35:11,997 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:36:06,827 - model.dcrnn_supervisor - INFO - Epoch [81/100] (13527) train_mae: 13.1269, val_mae: 21.8022, lr: 0.000001, 382.5s
+2023-08-04 06:41:34,441 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:41:34,441 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:42:29,359 - model.dcrnn_supervisor - INFO - Epoch [82/100] (13694) train_mae: 12.9999, val_mae: 20.1528, lr: 0.000001, 382.5s
+2023-08-04 06:47:57,015 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:47:57,015 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:48:51,936 - model.dcrnn_supervisor - INFO - Epoch [83/100] (13861) train_mae: 13.1551, val_mae: 21.1895, lr: 0.000001, 382.6s
+2023-08-04 06:54:19,588 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 06:54:19,588 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 06:55:14,477 - model.dcrnn_supervisor - INFO - Epoch [84/100] (14028) train_mae: 13.1980, val_mae: 20.5017, lr: 0.000001, 382.5s
+2023-08-04 07:00:41,954 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:00:41,954 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:01:36,830 - model.dcrnn_supervisor - INFO - Epoch [85/100] (14195) train_mae: 13.0771, val_mae: 19.2084, lr: 0.000001, 382.4s
+2023-08-04 07:01:36,834 - model.dcrnn_supervisor - INFO - Saved model at 85
+2023-08-04 07:01:36,834 - model.dcrnn_supervisor - INFO - Val loss decrease from 19.7724 to 19.2084, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo85.tar
+2023-08-04 07:07:04,299 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:07:04,299 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:07:59,224 - model.dcrnn_supervisor - INFO - Epoch [86/100] (14362) train_mae: 13.4709, val_mae: 22.7624, lr: 0.000001, 382.4s
+2023-08-04 07:13:26,863 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:13:26,863 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:14:21,714 - model.dcrnn_supervisor - INFO - Epoch [87/100] (14529) train_mae: 13.2673, val_mae: 20.0131, lr: 0.000001, 382.5s
+2023-08-04 07:19:49,385 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:19:49,385 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:20:44,276 - model.dcrnn_supervisor - INFO - Epoch [88/100] (14696) train_mae: 13.3373, val_mae: 19.5172, lr: 0.000001, 382.6s
+2023-08-04 07:26:12,014 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:26:12,014 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:27:06,867 - model.dcrnn_supervisor - INFO - Epoch [89/100] (14863) train_mae: 13.2571, val_mae: 20.0840, lr: 0.000001, 382.6s
+2023-08-04 07:32:34,489 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:32:34,489 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:33:29,356 - model.dcrnn_supervisor - INFO - Epoch [90/100] (15030) train_mae: 13.3617, val_mae: 19.9317, lr: 0.000001, 382.5s
+2023-08-04 07:34:24,290 - model.dcrnn_supervisor - INFO - Epoch [90/100] (15030) train_mae: 13.3617, test_mae: 19.9362,  lr: 0.000001, 382.5s
+2023-08-04 07:39:51,897 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:39:51,898 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:40:46,784 - model.dcrnn_supervisor - INFO - Epoch [91/100] (15197) train_mae: 13.6318, val_mae: 21.0919, lr: 0.000001, 382.5s
+2023-08-04 07:46:14,365 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:46:14,366 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:47:09,242 - model.dcrnn_supervisor - INFO - Epoch [92/100] (15364) train_mae: 13.6171, val_mae: 20.1247, lr: 0.000001, 382.5s
+2023-08-04 07:52:36,952 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:52:36,952 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:53:31,805 - model.dcrnn_supervisor - INFO - Epoch [93/100] (15531) train_mae: 13.6023, val_mae: 20.3493, lr: 0.000001, 382.6s
+2023-08-04 07:59:00,209 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 07:59:00,209 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 07:59:55,319 - model.dcrnn_supervisor - INFO - Epoch [94/100] (15698) train_mae: 13.7236, val_mae: 20.2083, lr: 0.000001, 383.5s
+2023-08-04 08:05:23,976 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 08:05:23,976 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 08:06:19,012 - model.dcrnn_supervisor - INFO - Epoch [95/100] (15865) train_mae: 13.9606, val_mae: 20.9665, lr: 0.000001, 383.7s
+2023-08-04 08:11:47,670 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 08:11:47,670 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 08:12:42,785 - model.dcrnn_supervisor - INFO - Epoch [96/100] (16032) train_mae: 13.8526, val_mae: 22.5839, lr: 0.000001, 383.8s
+2023-08-04 08:18:11,526 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 08:18:11,526 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 08:19:06,654 - model.dcrnn_supervisor - INFO - Epoch [97/100] (16199) train_mae: 13.9756, val_mae: 19.3192, lr: 0.000001, 383.9s
+2023-08-04 08:24:35,199 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 08:24:35,199 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 08:25:30,327 - model.dcrnn_supervisor - INFO - Epoch [98/100] (16366) train_mae: 13.9530, val_mae: 19.6552, lr: 0.000001, 383.7s
+2023-08-04 08:30:59,149 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 08:30:59,149 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 08:31:54,197 - model.dcrnn_supervisor - INFO - Epoch [99/100] (16533) train_mae: 14.2684, val_mae: 20.2318, lr: 0.000001, 383.9s
+2023-08-04 08:37:22,995 - model.dcrnn_supervisor - INFO - epoch complete
+2023-08-04 08:37:22,995 - model.dcrnn_supervisor - INFO - evaluating now!
+2023-08-04 08:38:18,182 - model.dcrnn_supervisor - INFO - Epoch [100/100] (16700) train_mae: 14.2834, val_mae: 18.9555, lr: 0.000001, 384.0s
+2023-08-04 08:39:13,271 - model.dcrnn_supervisor - INFO - Epoch [100/100] (16700) train_mae: 14.2834, test_mae: 19.1343,  lr: 0.000001, 384.0s
+2023-08-04 08:39:13,278 - model.dcrnn_supervisor - INFO - Saved model at 100
+2023-08-04 08:39:13,278 - model.dcrnn_supervisor - INFO - Val loss decrease from 19.2084 to 18.9555, saving to experiments\PEMS08\dcrnn_DR_2_h_24_64-64_lr_0.01_bs_64_0803215203//epo100.tar
+2023-08-04 08:39:13,287 - model.dcrnn_supervisor - INFO - Loaded model at 100
+2023-08-04 08:40:09,312 - model.dcrnn_supervisor - INFO - Horizon 1: mae: 13.84, rmse: 21.11, mape: 10.18%.
+2023-08-04 08:40:09,328 - model.dcrnn_supervisor - INFO - Horizon 2: mae: 14.65, rmse: 22.55, mape: 10.53%.
+2023-08-04 08:40:09,345 - model.dcrnn_supervisor - INFO - Horizon 3: mae: 15.23, rmse: 23.58, mape: 10.91%.
+2023-08-04 08:40:09,361 - model.dcrnn_supervisor - INFO - Horizon 4: mae: 15.71, rmse: 24.43, mape: 11.21%.
+2023-08-04 08:40:09,378 - model.dcrnn_supervisor - INFO - Horizon 5: mae: 16.14, rmse: 25.15, mape: 11.47%.
+2023-08-04 08:40:09,395 - model.dcrnn_supervisor - INFO - Horizon 6: mae: 16.57, rmse: 25.83, mape: 11.70%.
+2023-08-04 08:40:09,412 - model.dcrnn_supervisor - INFO - Horizon 7: mae: 17.02, rmse: 26.51, mape: 11.95%.
+2023-08-04 08:40:09,428 - model.dcrnn_supervisor - INFO - Horizon 8: mae: 17.43, rmse: 27.15, mape: 12.16%.
+2023-08-04 08:40:09,445 - model.dcrnn_supervisor - INFO - Horizon 9: mae: 17.80, rmse: 27.71, mape: 12.36%.
+2023-08-04 08:40:09,462 - model.dcrnn_supervisor - INFO - Horizon 10: mae: 18.13, rmse: 28.24, mape: 12.59%.
+2023-08-04 08:40:09,479 - model.dcrnn_supervisor - INFO - Horizon 11: mae: 18.50, rmse: 28.78, mape: 12.83%.
+2023-08-04 08:40:09,496 - model.dcrnn_supervisor - INFO - Horizon 12: mae: 18.94, rmse: 29.43, mape: 13.10%.
+2023-08-04 08:40:09,513 - model.dcrnn_supervisor - INFO - Horizon 13: mae: 19.45, rmse: 30.14, mape: 13.37%.
+2023-08-04 08:40:09,531 - model.dcrnn_supervisor - INFO - Horizon 14: mae: 19.97, rmse: 30.90, mape: 13.76%.
+2023-08-04 08:40:09,548 - model.dcrnn_supervisor - INFO - Horizon 15: mae: 20.39, rmse: 31.60, mape: 13.94%.
+2023-08-04 08:40:09,566 - model.dcrnn_supervisor - INFO - Horizon 16: mae: 20.77, rmse: 32.19, mape: 14.17%.
+2023-08-04 08:40:09,583 - model.dcrnn_supervisor - INFO - Horizon 17: mae: 21.13, rmse: 32.76, mape: 14.41%.
+2023-08-04 08:40:09,601 - model.dcrnn_supervisor - INFO - Horizon 18: mae: 21.48, rmse: 33.31, mape: 14.67%.
+2023-08-04 08:40:09,619 - model.dcrnn_supervisor - INFO - Horizon 19: mae: 21.87, rmse: 33.90, mape: 14.91%.
+2023-08-04 08:40:09,636 - model.dcrnn_supervisor - INFO - Horizon 20: mae: 22.22, rmse: 34.44, mape: 15.10%.
+2023-08-04 08:40:09,653 - model.dcrnn_supervisor - INFO - Horizon 21: mae: 22.56, rmse: 34.94, mape: 15.31%.
+2023-08-04 08:40:09,670 - model.dcrnn_supervisor - INFO - Horizon 22: mae: 22.88, rmse: 35.41, mape: 15.51%.
+2023-08-04 08:40:09,686 - model.dcrnn_supervisor - INFO - Horizon 23: mae: 23.24, rmse: 35.94, mape: 15.76%.
+2023-08-04 08:40:09,703 - model.dcrnn_supervisor - INFO - Horizon 24: mae: 23.67, rmse: 36.55, mape: 16.06%.
+2023-08-04 08:40:09,703 - model.dcrnn_supervisor - INFO - Average Error: mae: 19.15, rmse: 29.69, mape: 13.25%.
