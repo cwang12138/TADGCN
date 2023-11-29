@@ -14,7 +14,7 @@ This is a TensorFlow implementation of TADGCN.
 
 ## Dataset
 
-The datasets used in our paper are collected by the Caltrans Performance Measurement System(PeMS). Please refer to [STSGCN (AAAI2020)](https://github.com/Davidham3/STSGCN) for the download url.
+The datasets used in our paper are collected by the Caltrans Performance Measurement System(PeMS). Please refer to [STSGCN (AAAI2020)](https://github.com/Davidham3/STSGCN) or [Baidu Yun](https://pan.baidu.com/s/1AIUsXgHR3y33I5IG5TyuWA?pwd=rdqq) for the download url.
 
 ## Run
 
