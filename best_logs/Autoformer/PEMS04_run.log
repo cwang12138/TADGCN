@@ -1,0 +1,244 @@
+2024-03-17 03:16: Args in experiment:
+2024-03-17 03:16: Namespace(activation='gelu', batch_size=32, bucket_size=4, c_out=307, checkpoints='checkpoints/', d_ff=2048, d_layers=1, d_model=512, data='PEMS04', data_path='PEMS04.csv', dec_in=307, des='test', devices='0,1,2,3', distil=True, do_predict=False, dropout=0.05, e_layers=2, embed='timeF', enc_in=307, factor=3, features='M', freq='h', gpu=0, is_training=1, itr=5, label_len=48, learning_rate=0.0001, loss='mse', lradj='type1', model='Autoformer', model_id='PEMS04_Autoformer', moving_avg=25, n_hashes=4, n_heads=8, num_workers=1, output_attention=False, patience=10, pred_len=24, root_path='./dataset/PEMS04/', seq_len=96, target='OT', train_epochs=100, use_amp=False, use_gpu=True, use_multi_gpu=False)
+2024-03-17 03:16: Use GPU: cuda:0
+2024-03-17 03:16: >>>>>>>start training : ./experiments/PEMS04/2024-03-17-03-16-43/PEMS04_Autoformer_Autoformer_PEMS04_ftM_sl96_ll48_pl24_dm512_nh8_el2_dl1_df2048_fc3_ebtimeF_dtTrue_test_3/>>>>>>>>>>>>>>>>>>>>>>>>>>
+2024-03-17 03:16: train	10076
+2024-03-17 03:16: val	3376
+2024-03-17 03:16: test	3375
+2024-03-17 03:16: 	iters: 100, epoch: 1 | loss: 0.3479692
+2024-03-17 03:16: 	speed: 0.0992s/iter; left time: 3104.2948s
+2024-03-17 03:17: 	iters: 200, epoch: 1 | loss: 0.2559083
+2024-03-17 03:17: 	speed: 0.0758s/iter; left time: 2365.2672s
+2024-03-17 03:17: 	iters: 300, epoch: 1 | loss: 0.2052180
+2024-03-17 03:17: 	speed: 0.0757s/iter; left time: 2355.5155s
+2024-03-17 03:17: Epoch: 1 cost time: 26.329725980758667
+2024-03-17 03:17: Epoch: 1, Steps: 314 | Train Loss: 0.3990527 Vali Loss: 0.3116062
+2024-03-17 03:17: Validation loss decreased (inf --> 0.311606).  Saving model ...
+2024-03-17 03:17: Updating learning rate to 0.0001
+2024-03-17 03:17: 	iters: 100, epoch: 2 | loss: 0.1987912
+2024-03-17 03:17: 	speed: 0.1813s/iter; left time: 5617.2552s
+2024-03-17 03:17: 	iters: 200, epoch: 2 | loss: 0.1685634
+2024-03-17 03:17: 	speed: 0.0760s/iter; left time: 2347.0087s
+2024-03-17 03:17: 	iters: 300, epoch: 2 | loss: 0.1366318
+2024-03-17 03:17: 	speed: 0.0759s/iter; left time: 2335.4184s
+2024-03-17 03:17: Epoch: 2 cost time: 26.297892808914185
+2024-03-17 03:17: Epoch: 2, Steps: 314 | Train Loss: 0.1693373 Vali Loss: 0.2459573
+2024-03-17 03:17: Validation loss decreased (0.311606 --> 0.245957).  Saving model ...
+2024-03-17 03:17: Updating learning rate to 5e-05
+2024-03-17 03:18: 	iters: 100, epoch: 3 | loss: 0.1205004
+2024-03-17 03:18: 	speed: 0.1824s/iter; left time: 5595.2224s
+2024-03-17 03:18: 	iters: 200, epoch: 3 | loss: 0.1481812
+2024-03-17 03:18: 	speed: 0.0758s/iter; left time: 2317.0505s
+2024-03-17 03:18: 	iters: 300, epoch: 3 | loss: 0.1174412
+2024-03-17 03:18: 	speed: 0.0759s/iter; left time: 2312.8144s
+2024-03-17 03:18: Epoch: 3 cost time: 26.326740980148315
+2024-03-17 03:18: Epoch: 3, Steps: 314 | Train Loss: 0.1347461 Vali Loss: 0.2263925
+2024-03-17 03:18: Validation loss decreased (0.245957 --> 0.226392).  Saving model ...
+2024-03-17 03:18: Updating learning rate to 2.5e-05
+2024-03-17 03:18: 	iters: 100, epoch: 4 | loss: 0.1063935
+2024-03-17 03:18: 	speed: 0.1825s/iter; left time: 5540.3530s
+2024-03-17 03:18: 	iters: 200, epoch: 4 | loss: 0.1221024
+2024-03-17 03:18: 	speed: 0.0758s/iter; left time: 2294.7618s
+2024-03-17 03:18: 	iters: 300, epoch: 4 | loss: 0.1104759
+2024-03-17 03:18: 	speed: 0.0761s/iter; left time: 2294.0963s
+2024-03-17 03:18: Epoch: 4 cost time: 26.306819438934326
+2024-03-17 03:18: Epoch: 4, Steps: 314 | Train Loss: 0.1241348 Vali Loss: 0.2133642
+2024-03-17 03:18: Validation loss decreased (0.226392 --> 0.213364).  Saving model ...
+2024-03-17 03:18: Updating learning rate to 1.25e-05
+2024-03-17 03:19: 	iters: 100, epoch: 5 | loss: 0.1080534
+2024-03-17 03:19: 	speed: 0.1819s/iter; left time: 5466.3020s
+2024-03-17 03:19: 	iters: 200, epoch: 5 | loss: 0.1151239
+2024-03-17 03:19: 	speed: 0.0761s/iter; left time: 2279.9084s
+2024-03-17 03:19: 	iters: 300, epoch: 5 | loss: 0.1128691
+2024-03-17 03:19: 	speed: 0.0759s/iter; left time: 2266.3423s
+2024-03-17 03:19: Epoch: 5 cost time: 26.27585244178772
+2024-03-17 03:19: Epoch: 5, Steps: 314 | Train Loss: 0.1191244 Vali Loss: 0.2108591
+2024-03-17 03:19: Validation loss decreased (0.213364 --> 0.210859).  Saving model ...
+2024-03-17 03:19: Updating learning rate to 6.25e-06
+2024-03-17 03:19: 	iters: 100, epoch: 6 | loss: 0.1177215
+2024-03-17 03:19: 	speed: 0.1821s/iter; left time: 5413.3044s
+2024-03-17 03:19: 	iters: 200, epoch: 6 | loss: 0.1085643
+2024-03-17 03:19: 	speed: 0.0759s/iter; left time: 2248.6141s
+2024-03-17 03:19: 	iters: 300, epoch: 6 | loss: 0.1049888
+2024-03-17 03:19: 	speed: 0.0759s/iter; left time: 2242.4976s
+2024-03-17 03:19: Epoch: 6 cost time: 26.234033346176147
+2024-03-17 03:20: Epoch: 6, Steps: 314 | Train Loss: 0.1172164 Vali Loss: 0.2104818
+2024-03-17 03:20: Validation loss decreased (0.210859 --> 0.210482).  Saving model ...
+2024-03-17 03:20: Updating learning rate to 3.125e-06
+2024-03-17 03:20: 	iters: 100, epoch: 7 | loss: 0.1238581
+2024-03-17 03:20: 	speed: 0.1814s/iter; left time: 5337.3812s
+2024-03-17 03:20: 	iters: 200, epoch: 7 | loss: 0.1253934
+2024-03-17 03:20: 	speed: 0.0758s/iter; left time: 2221.8614s
+2024-03-17 03:20: 	iters: 300, epoch: 7 | loss: 0.1268220
+2024-03-17 03:20: 	speed: 0.0761s/iter; left time: 2222.7328s
+2024-03-17 03:20: Epoch: 7 cost time: 26.285003185272217
+2024-03-17 03:20: Epoch: 7, Steps: 314 | Train Loss: 0.1157574 Vali Loss: 0.2105577
+2024-03-17 03:20: EarlyStopping counter: 1 out of 10
+2024-03-17 03:20: Updating learning rate to 1.5625e-06
+2024-03-17 03:20: 	iters: 100, epoch: 8 | loss: 0.1087814
+2024-03-17 03:20: 	speed: 0.1802s/iter; left time: 5245.5137s
+2024-03-17 03:20: 	iters: 200, epoch: 8 | loss: 0.1099678
+2024-03-17 03:20: 	speed: 0.0759s/iter; left time: 2202.6922s
+2024-03-17 03:21: 	iters: 300, epoch: 8 | loss: 0.1180103
+2024-03-17 03:21: 	speed: 0.0760s/iter; left time: 2195.9623s
+2024-03-17 03:21: Epoch: 8 cost time: 26.233944177627563
+2024-03-17 03:21: Epoch: 8, Steps: 314 | Train Loss: 0.1153166 Vali Loss: 0.2093301
+2024-03-17 03:21: Validation loss decreased (0.210482 --> 0.209330).  Saving model ...
+2024-03-17 03:21: Updating learning rate to 7.8125e-07
+2024-03-17 03:21: 	iters: 100, epoch: 9 | loss: 0.1182176
+2024-03-17 03:21: 	speed: 0.1821s/iter; left time: 5243.5081s
+2024-03-17 03:21: 	iters: 200, epoch: 9 | loss: 0.1052644
+2024-03-17 03:21: 	speed: 0.0759s/iter; left time: 2178.5586s
+2024-03-17 03:21: 	iters: 300, epoch: 9 | loss: 0.1050714
+2024-03-17 03:21: 	speed: 0.0758s/iter; left time: 2167.5436s
+2024-03-17 03:21: Epoch: 9 cost time: 26.283878087997437
+2024-03-17 03:21: Epoch: 9, Steps: 314 | Train Loss: 0.1152550 Vali Loss: 0.2087135
+2024-03-17 03:21: Validation loss decreased (0.209330 --> 0.208714).  Saving model ...
+2024-03-17 03:21: Updating learning rate to 3.90625e-07
+2024-03-17 03:21: 	iters: 100, epoch: 10 | loss: 0.1137491
+2024-03-17 03:21: 	speed: 0.1820s/iter; left time: 5183.1438s
+2024-03-17 03:22: 	iters: 200, epoch: 10 | loss: 0.1161095
+2024-03-17 03:22: 	speed: 0.0759s/iter; left time: 2153.5826s
+2024-03-17 03:22: 	iters: 300, epoch: 10 | loss: 0.0974758
+2024-03-17 03:22: 	speed: 0.0761s/iter; left time: 2152.7608s
+2024-03-17 03:22: Epoch: 10 cost time: 26.286772966384888
+2024-03-17 03:22: Epoch: 10, Steps: 314 | Train Loss: 0.1148874 Vali Loss: 0.2084766
+2024-03-17 03:22: Validation loss decreased (0.208714 --> 0.208477).  Saving model ...
+2024-03-17 03:22: Updating learning rate to 1.953125e-07
+2024-03-17 03:22: 	iters: 100, epoch: 11 | loss: 0.1166942
+2024-03-17 03:22: 	speed: 0.1819s/iter; left time: 5122.6485s
+2024-03-17 03:22: 	iters: 200, epoch: 11 | loss: 0.1132719
+2024-03-17 03:22: 	speed: 0.0757s/iter; left time: 2125.2729s
+2024-03-17 03:22: 	iters: 300, epoch: 11 | loss: 0.1138276
+2024-03-17 03:22: 	speed: 0.0759s/iter; left time: 2122.4399s
+2024-03-17 03:22: Epoch: 11 cost time: 26.28680944442749
+2024-03-17 03:22: Epoch: 11, Steps: 314 | Train Loss: 0.1148025 Vali Loss: 0.2083490
+2024-03-17 03:22: Validation loss decreased (0.208477 --> 0.208349).  Saving model ...
+2024-03-17 03:22: Updating learning rate to 9.765625e-08
+2024-03-17 03:23: 	iters: 100, epoch: 12 | loss: 0.1294392
+2024-03-17 03:23: 	speed: 0.1816s/iter; left time: 5056.6677s
+2024-03-17 03:23: 	iters: 200, epoch: 12 | loss: 0.1150754
+2024-03-17 03:23: 	speed: 0.0758s/iter; left time: 2104.2587s
+2024-03-17 03:23: 	iters: 300, epoch: 12 | loss: 0.1175825
+2024-03-17 03:23: 	speed: 0.0759s/iter; left time: 2098.8808s
+2024-03-17 03:23: Epoch: 12 cost time: 26.2759108543396
+2024-03-17 03:23: Epoch: 12, Steps: 314 | Train Loss: 0.1147256 Vali Loss: 0.2083988
+2024-03-17 03:23: EarlyStopping counter: 1 out of 10
+2024-03-17 03:23: Updating learning rate to 4.8828125e-08
+2024-03-17 03:23: 	iters: 100, epoch: 13 | loss: 0.1199773
+2024-03-17 03:23: 	speed: 0.1807s/iter; left time: 4976.5729s
+2024-03-17 03:23: 	iters: 200, epoch: 13 | loss: 0.1141415
+2024-03-17 03:23: 	speed: 0.0758s/iter; left time: 2079.6249s
+2024-03-17 03:23: 	iters: 300, epoch: 13 | loss: 0.1076436
+2024-03-17 03:23: 	speed: 0.0759s/iter; left time: 2073.6800s
+2024-03-17 03:23: Epoch: 13 cost time: 26.223127126693726
+2024-03-17 03:23: Epoch: 13, Steps: 314 | Train Loss: 0.1147698 Vali Loss: 0.2086698
+2024-03-17 03:23: EarlyStopping counter: 2 out of 10
+2024-03-17 03:23: Updating learning rate to 2.44140625e-08
+2024-03-17 03:24: 	iters: 100, epoch: 14 | loss: 0.1226770
+2024-03-17 03:24: 	speed: 0.1826s/iter; left time: 4969.7352s
+2024-03-17 03:24: 	iters: 200, epoch: 14 | loss: 0.1088347
+2024-03-17 03:24: 	speed: 0.0759s/iter; left time: 2058.7966s
+2024-03-17 03:24: 	iters: 300, epoch: 14 | loss: 0.1125762
+2024-03-17 03:24: 	speed: 0.0759s/iter; left time: 2051.4743s
+2024-03-17 03:24: Epoch: 14 cost time: 26.23492121696472
+2024-03-17 03:24: Epoch: 14, Steps: 314 | Train Loss: 0.1149045 Vali Loss: 0.2086084
+2024-03-17 03:24: EarlyStopping counter: 3 out of 10
+2024-03-17 03:24: Updating learning rate to 1.220703125e-08
+2024-03-17 03:24: 	iters: 100, epoch: 15 | loss: 0.1205584
+2024-03-17 03:24: 	speed: 0.1832s/iter; left time: 4930.1084s
+2024-03-17 03:24: 	iters: 200, epoch: 15 | loss: 0.1152527
+2024-03-17 03:24: 	speed: 0.0761s/iter; left time: 2039.5032s
+2024-03-17 03:24: 	iters: 300, epoch: 15 | loss: 0.1032409
+2024-03-17 03:24: 	speed: 0.0763s/iter; left time: 2038.8195s
+2024-03-17 03:24: Epoch: 15 cost time: 26.425390243530273
+2024-03-17 03:25: Epoch: 15, Steps: 314 | Train Loss: 0.1147511 Vali Loss: 0.2087475
+2024-03-17 03:25: EarlyStopping counter: 4 out of 10
+2024-03-17 03:25: Updating learning rate to 6.103515625e-09
+2024-03-17 03:25: 	iters: 100, epoch: 16 | loss: 0.1133941
+2024-03-17 03:25: 	speed: 0.1822s/iter; left time: 4845.2621s
+2024-03-17 03:25: 	iters: 200, epoch: 16 | loss: 0.1254225
+2024-03-17 03:25: 	speed: 0.0759s/iter; left time: 2010.8564s
+2024-03-17 03:25: 	iters: 300, epoch: 16 | loss: 0.1208493
+2024-03-17 03:25: 	speed: 0.0760s/iter; left time: 2006.1611s
+2024-03-17 03:25: Epoch: 16 cost time: 26.246959447860718
+2024-03-17 03:25: Epoch: 16, Steps: 314 | Train Loss: 0.1148041 Vali Loss: 0.2085935
+2024-03-17 03:25: EarlyStopping counter: 5 out of 10
+2024-03-17 03:25: Updating learning rate to 3.0517578125e-09
+2024-03-17 03:25: 	iters: 100, epoch: 17 | loss: 0.1108469
+2024-03-17 03:25: 	speed: 0.1816s/iter; left time: 4773.1093s
+2024-03-17 03:25: 	iters: 200, epoch: 17 | loss: 0.1066073
+2024-03-17 03:25: 	speed: 0.0759s/iter; left time: 1987.8048s
+2024-03-17 03:26: 	iters: 300, epoch: 17 | loss: 0.1114968
+2024-03-17 03:26: 	speed: 0.0761s/iter; left time: 1984.6323s
+2024-03-17 03:26: Epoch: 17 cost time: 26.29678225517273
+2024-03-17 03:26: Epoch: 17, Steps: 314 | Train Loss: 0.1145483 Vali Loss: 0.2084909
+2024-03-17 03:26: EarlyStopping counter: 6 out of 10
+2024-03-17 03:26: Updating learning rate to 1.52587890625e-09
+2024-03-17 03:26: 	iters: 100, epoch: 18 | loss: 0.1249076
+2024-03-17 03:26: 	speed: 0.1818s/iter; left time: 4720.2264s
+2024-03-17 03:26: 	iters: 200, epoch: 18 | loss: 0.1021379
+2024-03-17 03:26: 	speed: 0.0759s/iter; left time: 1963.9687s
+2024-03-17 03:26: 	iters: 300, epoch: 18 | loss: 0.1270012
+2024-03-17 03:26: 	speed: 0.0760s/iter; left time: 1958.9281s
+2024-03-17 03:26: Epoch: 18 cost time: 26.25685977935791
+2024-03-17 03:26: Epoch: 18, Steps: 314 | Train Loss: 0.1148869 Vali Loss: 0.2084849
+2024-03-17 03:26: EarlyStopping counter: 7 out of 10
+2024-03-17 03:26: Updating learning rate to 7.62939453125e-10
+2024-03-17 03:26: 	iters: 100, epoch: 19 | loss: 0.1099864
+2024-03-17 03:26: 	speed: 0.1821s/iter; left time: 4669.5329s
+2024-03-17 03:27: 	iters: 200, epoch: 19 | loss: 0.1101992
+2024-03-17 03:27: 	speed: 0.0758s/iter; left time: 1936.0393s
+2024-03-17 03:27: 	iters: 300, epoch: 19 | loss: 0.1109267
+2024-03-17 03:27: 	speed: 0.0759s/iter; left time: 1932.0148s
+2024-03-17 03:27: Epoch: 19 cost time: 26.349708080291748
+2024-03-17 03:27: Epoch: 19, Steps: 314 | Train Loss: 0.1145434 Vali Loss: 0.2086557
+2024-03-17 03:27: EarlyStopping counter: 8 out of 10
+2024-03-17 03:27: Updating learning rate to 3.814697265625e-10
+2024-03-17 03:27: 	iters: 100, epoch: 20 | loss: 0.1123408
+2024-03-17 03:27: 	speed: 0.1821s/iter; left time: 4612.3766s
+2024-03-17 03:27: 	iters: 200, epoch: 20 | loss: 0.1136755
+2024-03-17 03:27: 	speed: 0.0760s/iter; left time: 1918.7889s
+2024-03-17 03:27: 	iters: 300, epoch: 20 | loss: 0.1129736
+2024-03-17 03:27: 	speed: 0.0761s/iter; left time: 1913.6918s
+2024-03-17 03:27: Epoch: 20 cost time: 26.346668243408203
+2024-03-17 03:27: Epoch: 20, Steps: 314 | Train Loss: 0.1146803 Vali Loss: 0.2088848
+2024-03-17 03:27: EarlyStopping counter: 9 out of 10
+2024-03-17 03:27: Updating learning rate to 1.9073486328125e-10
+2024-03-17 03:28: 	iters: 100, epoch: 21 | loss: 0.1186271
+2024-03-17 03:28: 	speed: 0.1838s/iter; left time: 4599.3954s
+2024-03-17 03:28: 	iters: 200, epoch: 21 | loss: 0.1217751
+2024-03-17 03:28: 	speed: 0.0759s/iter; left time: 1892.6763s
+2024-03-17 03:28: 	iters: 300, epoch: 21 | loss: 0.1316835
+2024-03-17 03:28: 	speed: 0.0761s/iter; left time: 1890.0328s
+2024-03-17 03:28: Epoch: 21 cost time: 26.441550254821777
+2024-03-17 03:28: Epoch: 21, Steps: 314 | Train Loss: 0.1149334 Vali Loss: 0.2087797
+2024-03-17 03:28: EarlyStopping counter: 10 out of 10
+2024-03-17 03:28: Early stopping
+2024-03-17 03:28: >>>>>>>testing : ./experiments/PEMS04/2024-03-17-03-16-43/PEMS04_Autoformer_Autoformer_PEMS04_ftM_sl96_ll48_pl24_dm512_nh8_el2_dl1_df2048_fc3_ebtimeF_dtTrue_test_3/<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2024-03-17 03:28: test	3375
+2024-03-17 03:28: Horizon 1: mae: 39.76, rmse: 55.27, mape: 40.18%.
+2024-03-17 03:28: Horizon 2: mae: 37.35, rmse: 52.34, mape: 37.20%.
+2024-03-17 03:28: Horizon 3: mae: 36.80, rmse: 51.65, mape: 36.65%.
+2024-03-17 03:28: Horizon 4: mae: 36.90, rmse: 51.75, mape: 36.96%.
+2024-03-17 03:28: Horizon 5: mae: 37.13, rmse: 52.06, mape: 37.21%.
+2024-03-17 03:28: Horizon 6: mae: 37.26, rmse: 52.28, mape: 37.00%.
+2024-03-17 03:28: Horizon 7: mae: 37.17, rmse: 52.28, mape: 36.44%.
+2024-03-17 03:28: Horizon 8: mae: 37.10, rmse: 52.25, mape: 36.20%.
+2024-03-17 03:28: Horizon 9: mae: 37.58, rmse: 52.84, mape: 37.10%.
+2024-03-17 03:28: Horizon 10: mae: 38.21, rmse: 53.71, mape: 37.48%.
+2024-03-17 03:28: Horizon 11: mae: 38.71, rmse: 54.47, mape: 37.66%.
+2024-03-17 03:28: Horizon 12: mae: 39.22, rmse: 55.17, mape: 38.33%.
+2024-03-17 03:28: Horizon 13: mae: 39.94, rmse: 56.07, mape: 39.63%.
+2024-03-17 03:28: Horizon 14: mae: 40.70, rmse: 56.93, mape: 40.99%.
+2024-03-17 03:28: Horizon 15: mae: 41.24, rmse: 57.52, mape: 41.89%.
+2024-03-17 03:28: Horizon 16: mae: 41.55, rmse: 57.90, mape: 42.05%.
+2024-03-17 03:28: Horizon 17: mae: 41.87, rmse: 58.36, mape: 41.88%.
+2024-03-17 03:28: Horizon 18: mae: 42.25, rmse: 58.95, mape: 41.99%.
+2024-03-17 03:28: Horizon 19: mae: 42.76, rmse: 59.71, mape: 42.36%.
+2024-03-17 03:28: Horizon 20: mae: 43.40, rmse: 60.63, mape: 42.97%.
+2024-03-17 03:28: Horizon 21: mae: 44.21, rmse: 61.75, mape: 43.79%.
+2024-03-17 03:28: Horizon 22: mae: 45.22, rmse: 63.14, mape: 44.82%.
+2024-03-17 03:28: Horizon 23: mae: 46.42, rmse: 64.80, mape: 45.98%.
+2024-03-17 03:28: Horizon 24: mae: 47.97, rmse: 66.40, mape: 48.69%.
+2024-03-17 03:28: Average Error: mae: 40.45, rmse: 56.59, mape: 40.23%.
